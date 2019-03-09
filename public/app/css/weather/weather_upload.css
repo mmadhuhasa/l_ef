@@ -1,0 +1,16 @@
+.cust-container {
+   width: 1000px;
+    background: #fff;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 3px 3px 1px #999999;
+    padding: 15px;
+}
+textarea {
+    resize: none;
+}
+.upload_btn {
+    line-height: 1;
+    height: 30px;
+}
+

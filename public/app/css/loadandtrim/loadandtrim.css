@@ -1,0 +1,812 @@
+
+/*------------ Load trim css starts here------------*/
+.trim-search .form-control{
+    font-size:14px !important;
+}
+input[type=range] {
+    -webkit-appearance: none;
+    position:absolute;
+    top:0px;
+    width: 100%;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: #000;
+    border-radius: 10px;
+}
+input[type=range]::-webkit-slider-thumb {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #ff0000;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -5px;
+}
+/*input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #ff0000;
+}*/
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: #ccc;
+    border-radius: 10px;
+}
+input[type=range]::-moz-range-thumb {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #ff0000;
+    cursor: pointer;
+}
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    border-width: 12px 0;
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    background: #2a6495;
+    border-radius: 2.6px;
+}
+input[type=range]::-ms-fill-upper {
+    background: #ff0000;
+    border-radius: 50%;
+}
+input[type=range]::-ms-thumb {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #ff0000;
+    cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: #ff0000;
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: #ff0000;
+}
+/*------------ Load trim css ends here------------*/
+
+
+.laodtrim-header{
+    /*background-color:#fff;*/
+    width:100%;
+    float:left;
+    padding:5px 0px;
+}
+.laodtrim-header .fa-plane{
+    font-size:16px;
+    line-height:0px;
+}
+.trim-graph,.trim-search,.aeroplane{
+    min-height: 600px;
+}
+
+/*------------- CSS Vivek ----------------------*/
+.lt-pad-lr-2 {
+    padding-left:2px;
+    padding-right:2px;
+}
+
+.lt-pad-lr-8 {
+    padding-left: 8px;
+    padding-right:8px;
+}
+
+.lt-pad-lr-5 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.lt-pad-lr-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.lt-sec { 
+    background:#fff;
+    margin:10px auto;
+    box-shadow: 0 0 3px 1px #999;
+    width: 100%;
+    float: left;
+    padding-bottom: 3px;
+}
+
+.lt-tc-form {
+    width: 100%;
+    float: left;
+}
+
+.lt-c-error {
+    border : 1px solid red;
+    border-radius: 6px;
+}
+.lt-left-sec{
+    margin-bottom: 2px; 
+}
+.lt-left-sec, .lt-left-sec2, .lt-right-sec {
+    margin-top: 3px;
+    float: left;
+    width: 100%;
+    font-size: 12px;
+    border: 1px solid #969696;
+    border-radius: 4px;
+    padding-bottom: 10px;
+    background: #ffffff;
+}
+
+.lt-textcenter {
+    text-align: center;
+    font-size: 13px;
+    color: #555;
+}
+
+.lt-left-head, .lt-right-head {
+    font-size: 11px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 15px;
+    background: -webkit-gradient(linear, 0% 100%, 0% 0%, from(rgb(51, 51, 51)), color-stop(0.5, rgb(68, 68, 68)), to(rgb(51, 51, 51)));
+    width: 100%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border:1px solid #ccc;
+}
+
+.lt-column-1 {
+    width:34%;
+    float:left;
+    padding-right: 6px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+.lt-column-2 {
+    width:17%;
+    float:left;
+    padding-right: 6px;
+    padding-left: 6px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+.lt-column-3 {
+    width:17%;
+    float:left;
+    padding-right: 6px;
+    padding-left: 6px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+.lt-column-4 {
+    width:17%;
+    float:left;
+    padding-right: 6px;
+    padding-left: 6px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+.lt-column-5 {
+    width:15%;
+    float:left;
+    padding-left: 6px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+.lt-box {
+    border:1px solid #ccc;
+    background:#fff;
+    height:32px;
+    border-radius:4px; 
+    width:40%;
+    margin-right:5px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    position: relative;    
+}
+
+.lt-label-left {
+    position: absolute;
+    font-size: 13px;
+    font-weight: bold;
+    color: #555;
+    top:5px;
+    left:5px;
+}
+
+.lt-box-checkbox,.lt-box-checkbox-2 {
+    line-height: 2.5;
+    position: absolute;
+    border-left: 1px solid #d9d9d9;
+    padding-left: 7px;
+    height: 31px;
+}
+
+.label_radio {
+    padding-right: 17px; 
+}
+
+.lt-box-checkbox {
+    right:28px;
+}
+
+.lt-box-checkbox-2 {
+    right: 6px;
+    top:0px;
+}
+
+.lt-po-i {
+    right:6px;
+    line-height: 1.2;
+    height: 31px;
+    bottom: 0.5px;
+}
+
+.lt-box-checkbox label,.lt-box-checkbox-2 label {
+    font-size: 12px;
+    font-weight: normal;
+    width: 100%;
+    margin-bottom: 0px;
+    display: inline;
+}
+
+.lt-pad-lr-0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.lt-right-sec input[type=text] {
+    height: 28px;
+}
+
+input[type=text]:disabled {
+    background: #ffffff;
+}
+
+
+
+.lt-fc-center, .lt-fc-center1 {
+    text-align: center;
+    color: #555;
+    font-size: 12px;
+}
+
+.lt-fc-center1 {
+    font-weight: bold;
+}
+
+.lt-label-center {
+    position: absolute;
+    font-size: 13px;
+    font-weight: normal;
+    color: #555;
+    top:6px;
+    text-align: center;
+}
+
+.lt-left-sec .form-control[readonly],.lt-right-sec .form-control[readonly] {
+    opacity: 1;
+    background-color: #f5f5f5;
+    border:1px solid #b2b2b2;
+}
+
+.btn-calculate {
+    width: 100%;
+    font-size: 11px;
+    height: 29px;
+    padding: 0;
+    border-radius: 4px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f1292b), to(#f37858));
+}
+
+.btn-calculate:hover {
+    transition: all ease 0.4s;
+    box-shadow: inset 0 -36px 0 0 #000000;
+}
+
+.lt-btn-save,.lt-btn-print  {
+    text-decoration:underline;
+    width: 100%;
+    font-size: 11px;
+    height: 28px;
+    border-radius: 4px;
+    color: #fff;
+    position: relative;
+    padding: 6px;
+    background: -webkit-gradient(linear, 0% 100%, 0% 0%, from(rgb(14, 14, 14)), color-stop(0.5, rgb(58, 56, 56)), to(rgb(21, 20, 20)));
+}
+.lt-btn-save:hover, .lt-btn-print:hover {
+    transition: all ease 0.4s;
+    box-shadow: inset 0 -36px 0 0 #f1292b;
+    border: none;
+}
+
+.fa-save {
+    padding-left: 10px;
+}
+.fa-print {
+    padding-left: 8px;
+}
+/*.lt-btn-save:before {
+    position: absolute;
+    content: "\f0c7";
+    font-family: 'FontAwesome';
+    top: 5px;
+    left: 20px;
+    font-size: 10px;
+    z-index: 0;
+}
+
+.lt-btn-print:before {
+    position: absolute;
+    content: "\f02f";
+    font-family: 'FontAwesome';
+    top: 5px;
+    left: 20px;
+    font-size: 10px;
+    z-index: 0;
+} */
+.lt-flight {
+    border:2px solid #222;
+    border-radius: 4px;
+    margin-top: 10px;
+    background: #ffffff; 
+    text-align: center;
+}
+
+.lt-flightimage {
+    width: 21.95%;
+}
+
+.lt-graph {
+    width:72%;
+}
+
+.lt-wr {
+    background-color: #f5f5f5 !important;
+}
+
+input[type=checkbox] {
+    -webkit-appearance:button;
+    border: 1px solid #555;
+    border-radius: 3px;
+    background-color:#ffffff;    
+    width:10px;
+    height:10px;
+    outline:none;
+    box-shadow:none;
+}
+input[type=checkbox]:hover{
+    box-shadow:none !important;
+}
+
+input[type=checkbox]:focus {
+    box-shadow: none;
+    outline:none;
+    border: 1px solid #f1292b !important;
+}
+
+input[type=checkbox]:checked{
+    border-color:#f1292b !important;
+}
+input[type="checkbox"]:checked:before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    width: 4px;
+    height: 4px;
+    border-radius: 6px;
+    background: red;
+    outline:none;
+    box-shadow:none;
+}
+
+input[type=checkbox]:hover {
+    box-shadow:0px 0px 5px #ff0000;
+}
+
+@media (min-width:1200px){
+    .container {
+        width: 1000px;
+    }
+    .lt-ts-box {
+        width: 51%;
+    }
+}
+
+@media (max-width: 1000px){
+    .col-xs-12 + .col-xs-12, .col-sm-6, .col-xs-6{
+        margin-top: 0px;
+    }
+}
+@media (max-width: 767px) {
+
+    .lt-left-head {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+    .lt-box {
+        width: 26.5%;
+        margin-right: 2px;
+    }
+    .lt-label-left {
+        font-size: 11px;
+        left:2px;
+    }
+    .lt-box-checkbox {
+        left: 30px;
+        padding-left: 4px;
+    }
+
+    .lt-box-checkbox-2 {
+        left: 30px;
+        padding-left: 4px;
+    }
+
+    .lt-box-checkbox label, .lt-box-checkbox-2 label {
+        font-size: 11px;
+        font-weight: normal;
+        width: 100%;
+        margin-bottom: 0px;
+        display: inline;
+    }
+
+    .lt-fc-center {
+        font-size: 10px;
+        overflow: hidden;
+    }
+    .lt-xs-pad-5 {
+        padding:5px;
+    }
+    .lt-column-1 {
+        padding-right: 2px;
+    }
+    .form-control {
+        padding: 1px;
+    }
+
+    .lt-column-2,.lt-column-3,.lt-column-4 {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    .lt-column-5 {
+        padding-left: 2px;
+    }
+    .lt-graph {
+        margin-top: 10px;
+    }
+    .lt-flight {
+        border-top: 1px solid #ccc;
+    }
+    .lt-flightimage {
+        position: relative;
+        z-index: 1;
+        left: 37%;
+        top:0px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+    .lt-graph {
+        margin-top: 10px;
+    }
+
+    .lt-flightimage {
+        position: relative;
+        top: 0;
+        left:45%;
+    }        
+}
+
+
+.lt-radio-text{
+    font-weight: bold;
+    color: black;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.lt-radio-text:hover{
+    color:#f1291b;
+}
+.lt-h-35 {
+    height: 35px !important;
+}
+.lt-h-28 {
+    height: 28px !important;
+}
+
+input[type=checkbox] {
+    margin-top: 0px;
+    vertical-align: middle;
+}
+
+.lt-pad-lr-0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.lt-column-02 {
+    width:19%;
+    float:left;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
+
+.lt-column-001 {
+    width: 40%;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    height: 32px;
+}
+
+.lt-left-sec input[type=text] {
+    height: 32px;
+}
+
+.calc-btn {
+    width: 32%;
+    float: left;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-top:3px;
+}
+
+.lt-mar-0 {
+    margin: 0;
+    text-align: center;
+}
+
+.lt-column-head-01 {
+    width:43%;
+    float: left;
+    padding:5px;
+    font-size: 11px;
+    margin-bottom: 0;
+}
+.lt-column-head-02 {
+    width:18.5%;
+    float: left;
+    padding: 5px 0;
+    font-size: 11px;
+    margin-bottom: 0;
+    border-left: 1px solid #ccc;
+}
+
+.lt-column-head-1 {
+    width:34.7%;
+    float:left;
+    margin-bottom: 0px;
+    padding: 5px;
+}
+.lt-column-head-2 {
+    width:16%;
+    float:left;
+    margin-bottom: 0px;
+    padding: 5px 0;
+    border-left:1px solid #ccc;
+}
+
+.lt-pad-l-11 {
+    padding-left: 11px;
+    padding-right:0;
+}
+
+.save-print-btn {
+    padding-left: 16PX;
+    font-size: 11px;
+    line-height: 13px;
+    margin-top: 2px;
+    font-weight: bold;
+}
+
+.save-btn, .print-btn {
+    color: #f1292b;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.save-btn:hover, .print-btn:hover {
+    color: #222;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.save-btn:after {
+    content: '\f0c7';
+    font-family: 'FontAwesome';
+    padding-left: 12px;
+    font-size: 10px;
+}
+
+.print-btn:after {
+    content: '\f02f';
+    font-family: 'FontAwesome';
+    padding-left: 6px;
+}
+
+.lt-bg-grey {
+    background: #b2b2b2 !important;
+}
+
+.lt-bg-lgreen {
+    background: #00ff00 !important;
+}
+
+.lt-bg-skyblue {
+    background: skyblue !important;
+}
+.lt-bg-red {
+    background: red !important;
+    color: white;
+}
+.btn-calculate1[disabled]{
+    background: #5a5a5a;
+
+}
+.btn-calculate1[disabled]:hover{    
+    /*background: none !important;*/
+    box-shadow:none;
+}
+
+.max_zero_fuel{
+    width: 51%;
+    height: 3px;
+    background-color: #F1292B;
+    position: absolute;
+    top: 72%;
+    left: 32%;
+}
+
+.max_landing_fuel{
+    width: 51%;
+    height: 3px;
+    background-color: #F1292B;
+    position: absolute;
+    top: 50.4%;
+    left: 32%;
+}
+
+.max_takeoff_fuel{
+    width: 58%;
+    height: 3px;
+    background-color: #F1292B;
+    position: absolute;
+    top: 13.4%;
+    left: 35%;
+}
+
+
+/*---------- aeroplane css starts here --------------*/
+.aeroplane_div{
+    /*background:url("../../../media/images/flightseats/flight-image-with-no-seats.png") center top no-repeat;*/
+}
+.aeroplane-image{
+    position:absolute;
+    left: 10px;
+    top: 70px;
+}
+.seats{
+    padding-top: 140px;
+    padding-left: 5px;
+}
+.seats ul{
+    margin:0;
+    padding: 0;
+}
+.seats ul li{
+    list-style-type: none;
+    width:31px;
+    height:29px;
+    float:left;
+    margin-top:5px;
+    margin-bottom:5px;
+    cursor: pointer;
+}
+.front_seatbg{
+    background: url("../../../media/images/flightseats/seat_front_bg.png")center top no-repeat;  
+    background-position: 0px 0px; 
+    width:100%;
+    height:100%;
+}
+
+.front_seatbg_selected{
+    background: url("../../../media/images/flightseats/seat_front_bg.png")center top no-repeat;  
+    background-position: 0px -30px;
+    width:100%;
+    height:100%;
+}
+
+.back_seatbg{
+    background: url("../../../media/images/flightseats/seat_back_bg.png")center top no-repeat;  
+    background-position: 0px 0px; 
+    width:100%;
+    height:100%;
+}
+
+.back_seatbg_selected{
+    background: url("../../../media/images/flightseats/seat_back_bg.png")center top no-repeat;  
+    background-position: 0px -30px;
+    width:100%;
+    height:100%;
+}
+
+.rotate_seatbg{
+    background: url("../../../media/images/flightseats/rotate_seat_bg.png")center top no-repeat;  
+    background-position: 0px 0px; 
+    width:100%;
+    height:100%;
+}
+
+.rotate_seatbg_selected{
+    background: url("../../../media/images/flightseats/rotate_seat_bg.png")center top no-repeat;  
+    background-position: 0px -29px;
+    width:100%;
+    height:100%;
+}
+.seats ul li span.front{
+    background-color:#040000;
+    color:#fff;
+    padding:1px 3px;
+    border-radius:100%;
+    font-size:8px;
+}
+.seats ul li span.back{
+    background-color:#040000;
+    color:#fff;
+    padding:1px 3px;
+    border-radius:100%;
+    font-size:8px;
+}
+.seats ul li.rotate_seatbg, .seats ul li.rotate_seatbg_selected{
+    margin-top:0px !important;
+    margin-bottom:0px !important;
+}
+.airhoser-seat{
+    padding-left:36px !important;
+}
+.rowposition li:first-child{
+    margin-left:20px;
+}
+.rowposition li:last-child{
+    margin-left:3px;
+}
+.lt-left-sec2-column1 {
+    width: 30%;
+    float: left;
+    margin-bottom: 13px;
+    position:relative;
+}
+.ui-datepicker-trigger {
+    position: absolute;
+    right:5px;
+    top:5px;
+    height:24px;
+}
+
+.lt-left-sec2-column2 {
+    width: 32%;
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 12px;
+}
+/*---------- aeroplane css ends here --------------*/

@@ -1,0 +1,26 @@
+.sec-container{
+	width: 900px;
+	background: #fff;
+	font-family: arial,sans-serif;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.sec-sre{
+	border-top: 1px solid #000;
+}
+.sec-sre>thead>tr>th{
+	border:1px solid #000;
+	font-weight: bold;
+	padding:0px;
+	text-align: center;
+	font-size: 12px;
+}
+.sec-sre>tbody>tr>td{
+	border:1px solid #000;
+	font-weight: bold;
+	text-align: center;
+	font-size: 11px;
+}
+.sec-sre>tbody>tr>td{
+	border:1px solid #000;
+}

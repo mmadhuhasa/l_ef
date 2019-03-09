@@ -1,0 +1,309 @@
+/*.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 840px;
+  overflow:hidden;
+  min-height:0px;
+  border:2px solid black;
+  padding:30px;
+}*/
+body{
+	font-family: arial,sans-serif;
+}
+.turbo_result {
+    background: #fff;
+    clear:both;
+    margin-bottom: 15px;
+    box-shadow: 0 3px 3px 1px #999999;
+    padding-bottom: 25px;
+}
+.turbo_result .row {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.t_bcol1{
+	border:1px solid black;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+.b_col{
+	border:1px solid black;
+}
+.table-bordered>tbody>tr>td{
+	border:1px solid black;
+	padding: 0px 0px 0px 6px;
+	margin: 0px;
+}
+.table-bordered{
+	border:1px solid black;
+}
+.table-bordered>thead>tr>th {
+	border:1px solid black;
+}
+ /* th, td {
+    border: 2px solid black;
+    padding: 0px;
+  
+    
+ 
+ } */
+
+#td_t{
+	text-align:center;
+}
+.f_w{
+	font-weight: bold;
+	background-color: #eee;
+}
+.f_a{
+	font-weight: bold;
+}
+.f_i{
+	font-style: italic;
+	text-align: center;
+}
+.b_c{
+	background-color: #eee;
+}
+.f_b{
+	font-weight: bold;
+	background-color: #bbb;
+	text-align: center;
+	/*color:white;*/
+}
+#heading{
+	font-weight: bold;
+	text-align: center;
+	font-size: 14px;
+	margin-top: 60px;
+	padding-bottom: 20px;
+
+}
+#img_pro{
+	margin-top:15px;
+}
+#heading,p{
+	margin-bottom:2px;
+}
+ol li {
+	padding-left:15px;
+}
+.p{
+	padding-left: 95px;
+	padding-top:30px;
+}
+.note{
+	padding-top: 10px;
+	padding-left: 4px;
+}
+.input.error .form-control:focus
+{
+	border-color:red;
+	box-shadow:none;
+}
+
+
+
+
+
+
+
+        .main-container{
+            width: 80%;
+            margin: 0 auto;
+        }
+        .table{
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 20px;
+            border-collapse: collapse;
+        }
+        .cg-right{
+                text-align: right;
+            }
+        .cg-value{
+            text-align: left;
+            padding-left: 2px;
+        }  
+        .zfw{
+                width: auto;
+    padding-right: 7px;
+        } 
+        .th-padd-tb-2{
+                padding-top: 2px !important;
+    padding-bottom: 2px !important;
+        }
+        .padd-l-5{
+            padding-left: 5px;
+        } 
+        .padd-lr-25{
+                padding-left: 25px;
+    padding-right: 25px;
+        }
+        .width-auto{
+                width: auto;
+        }
+        td,th{
+            border: 1px solid #ddd;
+            border-top: 1px solid #ddd;
+            padding: 5px;
+        }
+        .highcharts-container {
+        background-size: 100% 100%;
+        height: 482px !important;
+        width:900px !important;
+    }
+    .highcharts-background{
+        fill-opacity:0
+    }
+    .highcharts-grid{
+        display:none;
+    }
+    .highcharts-legend{
+        display: none;
+    }
+    .green{
+        fill: green !important;
+    }
+    .red{
+        fill: red !important;
+    }
+    .blue{
+        fill: blue !important;
+    }
+    .highcharts-button{
+        display: none;
+    }
+     .auto_caps{
+            text-transform: uppercase;
+        }
+    a.disabled{color: grey;cursor: not-allowed !important}
+    .save-print-btn{padding-left: 12px}
+    .download-parent:hover .tooltip-download{
+        visibility: visible;
+    }
+    .download-parent{
+        position: relative;
+            width: auto;
+    float: right;
+    cursor: pointer;
+    margin-right: 30px;
+    margin-top: 10px;
+    }
+    .tooltip-download{
+
+         visibility: hidden;
+    position: absolute;
+    left: -25px;
+    background: #333;
+    color: #fff;
+    top: 5px;
+    padding: 3px;
+    font-size: 10px;
+    border-radius: 3px;
+    cursor: default;
+    text-transform: uppercase;
+    }
+        .graph_container {
+        width: 900px;
+        padding-left: 0;
+        border: none;
+        box-shadow: 0 3px 3px 1px #999999;
+        margin-bottom: 15px;
+        padding: 15px 0;
+        background: #fff;
+    }
+    #Div1 {
+        width: 100%;
+    }
+
+    /*        START OF FDTL MODAL PLACEHOLDER STYLES*/
+    .ltrim_sec .popupHeader {
+        font-size: 14px;
+    }
+    .ltrim_sec div.dynamiclabel
+    { 
+        display: block;
+        position: relative;
+        text-align: left;
+    }
+
+    .ltrim_sec div.dynamiclabel label{
+        position: absolute;
+        color:#000;
+        font-size:11px;
+        font-weight:normal;
+        background: transparent;
+        /*            border: 1px solid #333;*/
+        border-radius: 2px;
+        -webkit-border-radius:2px;
+        -moz-border-radius:2px;
+        -khtml-border-radius:2px;
+        -webkit-backface-visibility: hidden;
+        top: 10px;           
+        -moz-transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -webkit-transition: all 0.6s ease-in-out; 
+        -o-transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        opacity: 0;
+        z-index: -1;
+        line-height: 0px;
+        white-space: nowrap;
+    }
+    .ltrim_sec div.dynamiclabel > *:focus{
+        border-color:#f1292b;
+    }
+    .ltrim_sec div.dynamiclabel > *:not(:placeholder-shown) + label{
+       opacity: 1;
+        z-index:1;
+        top: -10px;
+        left:5px;
+        text-transform: uppercase;
+   }
+    .ltrim_sec div.dynamiclabel > *:focus + label{
+        opacity: 1;
+        z-index:100;
+        top: -10px;
+        left:5px;
+        text-transform: uppercase;
+    }
+    .ltrim_sec div.dynamiclabel [placeholder]::-webkit-input-placeholder {
+        transition: opacity 0.4s 0.4s ease; 
+        text-align: left;
+    }
+    .ltrim_sec div.dynamiclabel [placeholder]:focus::-webkit-input-placeholder {
+        transition: opacity 0.4s 0.4s ease; 
+        opacity: 0;
+    }
+    .ltrim_sec div.dynamiclabel .form-control {
+        text-align: left;
+        font-weight: bold;
+        color: #333;
+    }
+    .ltrim_sec div.dynamiclabel .form-control:focus {
+        border-bottom: 1px solid #ff0000;
+    }
+    /*        END OF FDTL MODAL PLACEHOLDER STYLES*/
+    .ltrim_sec {margin: 15px auto;background: #ffffff;box-shadow: 0 3px 3px 1px #999999;}
+    .ltrim_heading {margin-bottom: 30px;text-align: center;padding: 7px 0;font-weight: 600;font-size: 15px;color:#fff;
+                    font-family:'pt_sansregular', sans-serif;background: #a6a6a6;
+                    background: -moz-linear-gradient(left, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+                    background: -webkit-linear-gradient(left, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+                    background: -o-linear-gradient(left, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+                    background: -ms-linear-gradient(left, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+                    background: linear-gradient(to right, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6a6a6', endColorstr='#a6a6a6', GradientType=1 );}
+    .ltrim_sec .ui-datepicker-trigger {
+        right: 20px;
+        height: 21px;
+        top: 6px;
+    }
+    .ltrim_sec .form-group {
+        margin-bottom: 30px;
+    }
+
+    @media (min-width:1200px) {
+        .ltim_container {
+            width: 930px;
+        }
+    }

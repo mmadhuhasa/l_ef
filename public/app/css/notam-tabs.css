@@ -1,0 +1,127 @@
+/*----- Tab Links -----*/
+/* Clearfix */
+
+
+.tab-links {
+    list-style-type: none;
+    margin-bottom: 0;
+    overflow:hidden;
+    padding-left: 5px;
+
+}
+.tab-links li {
+    float: left;
+    position: relative;
+    width: 113px;
+    z-index: 1;
+}
+
+.tab-links li a {
+    display: inline-block;
+    color: #000;
+    text-align: center;
+    padding: 1.5em 1.5em 1em;
+    font-size: 12px;
+    text-decoration: none;
+    width: 113px;
+    text-transform: uppercase
+}
+.tab-links li a:hover {
+    color:#fff;
+}
+.tab-links li::before{
+    border: .1em solid #bbb;
+}
+
+.tab-links li::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: -5px;
+    bottom: 0.5em;
+    left: -5px;
+    z-index: -1;
+    border-bottom: 1px solid #f1292b;
+    border-radius: 15px 15px 0 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,d5d5d5+50,d5d5d5+50,dddddd+100,dddddd+100 */
+    background: #eeeeee; /* Old browsers */
+    background: -moz-linear-gradient(top,  #eeeeee 0%, #d5d5d5 50%, #d5d5d5 50%, #dddddd 100%, #dddddd 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #eeeeee 0%,#d5d5d5 50%,#d5d5d5 50%,#dddddd 100%,#dddddd 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #eeeeee 0%,#d5d5d5 50%,#d5d5d5 50%,#dddddd 100%,#dddddd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+
+    box-shadow: 0 0 hsla(0,0%,100%,.5) inset;
+    transform: perspective(5px) rotateX(2deg);
+    transform-origin: bottom;
+}
+
+.tab-links li:hover:before {
+    transition: all ease 0.4s;
+    box-shadow: inset 0 -33px 0 0 #333;
+    color: #fff;
+    border:none;
+}
+
+.tab-links li .active {
+    color: #fff;
+    font-family: 'pt_sansregular',sans-serif;
+}
+
+.tab-links li .active::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: -5px;
+    bottom: 0.7em;
+    left: -5px;
+    z-index: -1;
+    border-bottom: 1px solid #f1292b;
+    border-radius: 15px 15px 0 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f1292b), to(#f37858));
+    box-shadow: 0 0 hsla(0,0%,100%,.5) inset;
+    transform: perspective(5px) rotateX(2deg);
+    transform-origin: bottom;
+}
+
+/*----- Content of Tabs -----*/
+.tab-content {
+    padding:0 15px 15px 15px;
+    border-radius:3px;
+    background:#fff;    
+    /*max-height: 413px;*/
+    /*overflow-y: scroll;*/
+}
+
+.hide {
+    display:none;
+}
+
+.tab.active {
+    display:block;
+    z-index: 3;
+}
+
+.tab-content::-webkit-scrollbar{
+    width:5px;
+    visibility: hidden;
+}
+.tab-content:hover::-webkit-scrollbar{
+    width:5px;
+    visibility:visible;
+}
+/*.tab-content::-webkit-scrollbar-track {
+      background-color: #f1292b;
+}  the new scrollbar will have a flat appearance with the set background color */
+
+.tab-content::-webkit-scrollbar-thumb {
+    background-color: #F26232; 
+    border-radius:50px;
+} /* this will style the thumb, ignoring the track */
+
+.tab-content::-webkit-scrollbar-button {
+
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+
+.tab-content::-webkit-scrollbar-corner {
+    background-color: black;
+}

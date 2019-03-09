@@ -1,0 +1,330 @@
+.leftcontent,.rightcontent{
+    background-color:#fff;
+    width:100%;
+    float:left;
+}
+.trim-search .form-control{
+    font-size:14px !important;
+}
+input[type=range] {
+    -webkit-appearance: none;
+    position:absolute;
+    top:0px;
+    width: 100%;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: #000;
+    border-radius: 10px;
+}
+input[type=range]::-webkit-slider-thumb {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #ff0000;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -5px;
+}
+/*input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #ff0000;
+}*/
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: #ccc;
+    border-radius: 10px;
+}
+input[type=range]::-moz-range-thumb {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #ff0000;
+    cursor: pointer;
+}
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    border-width: 12px 0;
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    background: #2a6495;
+    border-radius: 2.6px;
+}
+input[type=range]::-ms-fill-upper {
+    background: #ff0000;
+    border-radius: 50%;
+}
+input[type=range]::-ms-thumb {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #ff0000;
+    cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: #ff0000;
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: #ff0000;
+}
+/*------------ Load trim css ends here------------*/
+
+
+.navlog-header{
+    background-color:#333;
+    width:100%;
+    float:left;
+    color:#fff;
+    font-size:13px;
+    text-transform:uppercase;
+}
+.navlog-header .col-xs-12{
+    padding:5px 0px 5px 10px;
+    line-height: 25px;
+}
+.laodtrim-header .fa-plane{
+    font-size:16px;
+    line-height:0px;
+}
+/*.trim-graph,.trim-search,.aeroplane{
+    min-height: 570px;
+}*/
+.trim-graph img{
+    width:100%;
+    height: 100%;
+}
+.trim-graph {
+    background-color: #d9d9d9;
+    padding: 20px;
+}
+.ui-datepicker-trigger {
+    right: 0;
+    position: absolute;
+    cursor: pointer;
+    top:0;
+}
+.labelplaceholder{
+    position: absolute;
+    top: 14%;
+    left: 8px;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #000;
+    width: 10%;
+    line-height: 13px;
+}
+.ui-clock-trigger {
+    right: 6px;
+    top: 8px;
+    font-size: 19px;
+    color: #e45041;
+    position: absolute;
+    cursor: pointer;
+}
+.form-row .form-search-row-left {
+    width: 33%;
+    margin-right: 0%;
+    float: left;
+    padding-right: 5px;
+}
+.form-row .form-search-row-right {
+    width: 33%;
+    float: left;
+    padding-right: 5px;
+}
+.lt-tac {
+    text-align: center;
+}
+.form-row .form-search-row-right1 {
+    width: 33%;
+    float: left;
+}
+#trim_setting_calculation .form-group {
+    margin: 5px;
+}
+.trimcalc-btn {
+    width: 98%;
+    height: 28px;
+    background: #f1292b;
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    border: none;
+}
+.trimcalc-btn:hover {
+    transition: all ease 0.4s;
+    box-shadow: inset 0 -33px 0 0 #333;
+    color: #fff;
+}
+.searchicon-button{
+    height: 25px;
+    width: 30px;
+    border-radius: 0 4px 4px 0;
+    border:none;
+    background-color: #ccc;
+    color:#000;
+}
+.searchicon-button .glyphicon-search{
+    line-height: 0px !important;
+}
+.tabs-downarrow{
+    position:relative;
+}
+
+
+/*----- Tabs -----*/
+
+
+/*----- Tab Links -----*/
+/* Clearfix */
+
+
+.tab-links {
+    list-style-type: none;
+    margin-bottom: 0;
+    overflow:hidden;
+    padding-left: 16px;
+
+}
+.tab-links li {
+    float: left;
+    position: relative;
+    width: 105px;
+    z-index: 1;
+}
+
+.tab-links li a {
+    display: inline-block;
+    color: #000;
+    text-align: center;
+    padding: 1.5em 1.5em 1em;
+    font-size: 12px;
+    text-decoration: none;
+    width: 105px;
+}
+.tab-links li a:hover {
+    color:#fff;
+}
+.tab-links li::before{
+    border: .1em solid #bbb;
+}
+
+.tab-links li::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: -5px;
+    bottom: 0.5em;
+    left: -5px;
+    z-index: -1;
+    border-bottom: 1px solid #f1292b;
+    border-radius: 15px 15px 0 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,d5d5d5+50,d5d5d5+50,dddddd+100,dddddd+100 */
+    background: #eeeeee; /* Old browsers */
+    background: -moz-linear-gradient(top,  #eeeeee 0%, #d5d5d5 50%, #d5d5d5 50%, #dddddd 100%, #dddddd 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #eeeeee 0%,#d5d5d5 50%,#d5d5d5 50%,#dddddd 100%,#dddddd 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #eeeeee 0%,#d5d5d5 50%,#d5d5d5 50%,#dddddd 100%,#dddddd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+
+    box-shadow: 0 0 hsla(0,0%,100%,.5) inset;
+    transform: perspective(5px) rotateX(2deg);
+    transform-origin: bottom;
+}
+
+.tab-links li:hover:before {
+    transition: all ease 0.4s;
+    box-shadow: inset 0 -33px 0 0 #333;
+    color: #fff;
+    border:none;
+}
+
+.tab-links li .active {
+    color: #fff;
+    font-family: 'pt_sansregular',sans-serif;
+}
+
+.tab-links li .active::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: -5px;
+    bottom: 0.7em;
+    left: -5px;
+    z-index: -1;
+    border-bottom: 1px solid #f1292b;
+    border-radius: 15px 15px 0 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f1292b), to(#f37858));
+    box-shadow: 0 0 hsla(0,0%,100%,.5) inset;
+    transform: perspective(5px) rotateX(2deg);
+    transform-origin: bottom;
+}
+
+/*----- Content of Tabs -----*/
+.tab-content {
+    padding:15px;
+    border-radius:3px;
+    background:#fff;    
+    height: 413px;
+    overflow-y: scroll;
+}
+
+.tab {
+    display:none;
+}
+
+.tab.active {
+    display:block;
+    z-index: 3;
+}
+textarea{
+    resize: none !important;
+    height: 34px !important;
+    overflow: hidden;
+    text-align: left !important;
+    background: #ffffff;
+    border-radius: 4px;
+    padding-left: 10px !important;
+    line-height: 15px !important;
+    padding-top: 2px !important;
+    background-color:#fff  !important;
+}
+.tab-content::-webkit-scrollbar{
+    width:5px;
+    visibility: hidden;
+}
+.tab-content:hover::-webkit-scrollbar{
+    width:5px;
+    visibility:visible;
+}
+/*.tab-content::-webkit-scrollbar-track {
+      background-color: #f1292b;
+}  the new scrollbar will have a flat appearance with the set background color */
+
+.tab-content::-webkit-scrollbar-thumb {
+    background-color: #F26232; 
+    border-radius:50px;
+} /* this will style the thumb, ignoring the track */
+
+.tab-content::-webkit-scrollbar-button {
+
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+
+.tab-content::-webkit-scrollbar-corner {
+    background-color: black;
+}

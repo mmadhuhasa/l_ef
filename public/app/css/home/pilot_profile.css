@@ -1,0 +1,421 @@
+.fc-unthemed td.fc-today {
+    background: none;
+    /*background: #d3d3d2;*/
+}
+
+.fc-row .fc-bg {
+    /*z-index: 5;*/
+}
+
+.fc-other-month {
+    background: #fcfcfc !important;
+}
+
+.fc-other-month .fc-day-number {
+    color: #454545;
+}
+.fc-list-table td {
+    border-width: 1px 0 0;
+    padding: 2px 17px;
+}
+.fc-day,
+.fc-day-top,
+.event-space {
+    cursor: pointer;
+    /*background: #d3d3d3;*/
+}
+
+.fc-day:hover {
+    background: rgba(211, 211, 211, 0.5);
+}
+
+.fc-row table {
+    height: 100%;
+}
+
+.fc-event .fc-content {
+    padding-left: 28px;
+}
+
+.fc-event {
+    background: transparent;
+    color: #333;
+    border: none;
+    font-size: 10px;
+}
+
+.fc-event:hover {
+    background: transparent;
+    color: #333;
+}
+
+.fc-event.fpl-event:before {
+    background: url('../../../media/flight_red_icon20.png');
+    /*background: #f25f4a;*/
+    color: #333;
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    left: 0;
+    top: -6px;
+    background-size: 25px;
+    text-decoration: none;
+}
+
+.fc-event:before {
+    background: url('../../../media/time-icon20.png');
+    /*background: #f25f4a;*/
+    color: #333;
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    left: 0;
+    top: -6px;
+    background-size: 25px;
+}
+
+.fc-content-skeleton {
+    height: 100%;
+}
+
+#calendar1 .fc-header-toolbar {
+    display: none;
+}
+
+#calendar1 .fc-view-container {
+    margin-top: 47px;
+}
+
+
+/* kavitha */
+
+.fc-widget-header th {
+    height: 40px;
+    font-size: 11px;
+    vertical-align: middle;
+    background: linear-gradient(to top, rgba(84, 81, 81, 0.75) 0%, rgba(33, 33, 33, 0.72) 50%, rgb(86, 79, 79) 100%);
+}
+
+.fc-basic-view .fc-week-number,
+.fc-basic-view .fc-day-number {
+    padding: 2px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.fc-day-header {
+    color: #fff;
+}
+
+.fc-day-number {
+    color: #333;
+}
+
+.fc-day-number:hover {
+    text-decoration: none;
+    color: #333;
+}
+
+
+/*.fc-toolbar {
+    margin-bottom: 15px;
+    margin: 0 auto;
+    width: 221px;
+    font-size: 20px;
+}*/
+
+
+/*.fc-toolbar h2 {
+    font-size: 19px;
+    margin-bottom: 15px;
+}*/
+
+.fc-corner-right {
+    margin-top: 15px;
+}
+
+.fc-header-toolbar {
+    margin-top: 15px;
+}
+
+.fc-unthemed .fc-list-heading td {
+    background: #999;
+    color: #fff;
+}
+
+.fc-event-dot {
+    background: none;
+    color: #fff;
+}
+
+.fc-list-item-time {}
+
+.fc-widget-header a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.fc-event-dot {
+    background-repeat: no-repeat;
+    background-position: left top;
+    width: 8px;
+    height: 8px;
+    position: relative;
+    left: -99px;
+    background: #f25f4a;
+}
+
+.modal-dialog {
+    margin-top: 95px;
+    margin-left: 542px;
+}
+
+.fc-list-item.fpl-event .fc-list-item-time,
+.fc-list-item.fpl-event .fc-list-item-title {
+    color: #8bc34a;
+}
+
+.fc-list-item.fpl-event .fc-event-dot {
+    background: #8bc34a;
+}
+
+.fc-list-item.license-event .fc-list-item-time,
+.license-event .fc-list-item-title {
+    color: #795548;
+}
+
+.fc-list-item.license-event .fc-event-dot {
+    background: #795548;
+}
+.fc-list-item.training-event .fc-list-item-time,
+.fc-list-item.training-event .fc-list-item-title {
+    color: #117fd0;
+}
+
+.fc-list-item.training-event .fc-event-dot {
+    background: #117fd0;
+}
+.fc-list-item.leave-event .fc-list-item-time,
+.fc-list-item.leave-event .fc-list-item-title {
+    color: #9c27b0;
+}
+
+.fc-list-item.leave-event .fc-event-dot {
+    background: #9c27b0;
+}
+.fc-list-item.week-off-event .fc-list-item-time,
+.fc-list-item.week-off-event .fc-list-item-title {
+    color: #ff9800;
+}
+
+.fc-list-item.week-off-event .fc-event-dot {
+    background: #ff9800;
+}
+
+.fc-list-heading td {
+    padding: 5px 5px !important;
+}
+
+.fc-list-item-title.fc-widget-content {
+    text-align: right;
+    padding-right: 5px;
+    font-weight: bold;
+}
+.fc-unthemed .fc-list-empty{
+    color: #000;
+}
+.fc-widget-header {
+    background: linear-gradient(to top, rgba(84, 81, 81, 0.75) 0%, rgba(33, 33, 33, 0.72) 50%, rgb(86, 79, 79) 100%) !important;
+    background: -moz-linear-gradient(left, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+    background: -webkit-linear-gradient(left, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+    background: -o-linear-gradient(left, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+    background: -ms-linear-gradient(left, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+    background: linear-gradient(to right, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a6a6a6', endColorstr='#a6a6a6', GradientType=1);
+}
+
+
+/* end */
+
+.fc-list-view .fc-scroller {
+    height: 399px !important;
+    overflow-y: auto;
+}
+
+.fc-day-grid-container {
+    overflow: hidden;
+}
+
+
+/*kavi*/
+
+.fc-view,
+.fc-scroller {
+    overflow: auto;
+}
+
+.cust-container {
+    background: #fff;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#calendar1 {
+    font-size: 13px;
+}
+
+
+/*end*/
+
+
+/* new calendar */
+
+.monthly-day-title-wrap {
+    font-size: 13px;
+    text-align: center;
+    background: #F26232 !important;
+    /* background: linear-gradient(to top, #fa9b5b, #F26232); */
+    background: #f1292b !important;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f1292b', endColorstr='#f37858') !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f1292b), to(#f37858)) !important;
+    background: -moz-linear-gradient(top, #f1292b, #f37858) !important;
+    border: 1px solid #747272;
+    color: #fff;
+}
+
+.fc-icon-left-single-arrow:after {
+    content: "\02039";
+    font-weight: bold;
+    font-size: 200%;
+    /*top: -3%;*/
+    text-decoration: none;
+}
+
+.day-name {
+    border-right: 1px solid #fff;
+    padding: 6px 0;
+}
+
+.day-name:nth-last-child(1) {
+    border-right: 0px;
+}
+
+.monthly-day-wrap {
+    border: 1px solid #ccc;
+}
+
+.monthly-header-title-date_n {
+    display: inline-block;
+    /*border: 1px solid #ccc;*/
+    color: #545454;
+    text-decoration: none;
+    height: 1.75em;
+    line-height: 1.65em;
+    padding: 0 0.65em 0 0.65em;
+    box-sizing: border-box;
+    transition: background .1s
+}
+input[type=checkbox], input[type=radio]{
+    margin: 4px 5px 0;
+}
+.checkbox-label{
+    font-weight: bold !important;
+    font-style: italic;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333;
+}
+.fc-toolbar h2 {
+    display: block;
+}
+
+.m-d {
+    cursor: pointer;
+}
+
+.m-d.fpl-event {
+    background: #d4f1b4 !important;
+}
+
+.m-d.license-event {
+    background: #795548 !important;
+}
+
+.m-d.training-event {
+    background: #c5e4fb !important;
+}
+
+.m-d.leave-event {
+    background: #e9d4ed !important;
+}
+.m-d.week-off-event{
+    background: #f9e4dd !important;
+}
+.m-d:hover {
+    background: #f9f69a ;
+}
+
+.monthly-day-blank .monthly-day-number {
+    float: right;
+    color: #ccc;
+    padding-right: 3px;
+}
+.bg-overlay {
+    background: rgba(0, 0, 0, .8);
+    position: absolute;
+    width: 100%;
+    display: block;
+    height: 100%;
+    z-index: 9000;
+    display: none;
+}
+.monthly-today .monthly-day-number {
+    background: #f1292b;
+    color: #fff;
+    padding: 3px;
+    border-radius: 10px;
+}
+.md-close{
+    position: absolute;
+    right: -11px;
+    top: -8px;
+    font-size: 29px;
+    background: #f00;
+    border-radius: 13px;
+    color: #fff;
+    z-index: 0;
+    cursor: pointer;
+}
+
+/* end*/
+
+
+/*modal css*/
+
+.md-content h3 {
+    background: #f1292b;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f1292b', endColorstr='#f37858');
+    background: -webkit-gradient(linear, left top, left bottom, from(#f1292b), to(#f37858));
+    background: -moz-linear-gradient(top, #f1292b, #f37858);
+    position: relative;
+    /*padding: 10px 20px;*/
+    border-bottom: 1px solid #DDD;
+    font-weight: bold;
+    border-radius: 6px 6px 0 0;
+    color: #ffffff;
+    height: 36px;
+    font-size: 15px !important;
+    opacity: 1 !important;
+}
+
+.md-content {
+    background: #f9f9f9 !important;
+    color: #333 !important;
+}
+
+
+/* end */

@@ -1,0 +1,252 @@
+
+     form.uppercase{
+            text-transform: uppercase;
+        }
+    .speed-right {
+        position: relative;
+    }
+    .form-row .speed-left dl, .cust-flytime dl {
+        margin-bottom: 0;
+    }
+    .endurance label {
+        margin-bottom: 1px;
+    }
+
+
+    #route1 {
+        margin-bottom :40px;
+    }
+
+    .cust-col .form-group, .custom-col .form-group, .cust-flytime .form-group {
+        margin-bottom: 0;
+    }
+
+
+    .nation {
+        margin-top:15px;
+    }
+    .forwidth {
+        width:36.5%;
+    }
+
+    .altwidth:nth-child(3) {
+        margin-right:0;
+    }
+
+    .remarks_box {
+        width: 89%;
+    }
+    .process_box {
+        margin-top:21px;
+    }
+
+    .frwidth {
+        width: 17.4%;
+        padding-left: 10px;
+        font-weight: bold;
+    }
+    .frwidth .form-group {
+        width:100%;
+        float: left;
+    }
+    .flight_rules_text {
+        font-size: 13px;
+        font-weight: normal;
+        float: left;
+        margin-top: 5px;
+    }
+    .flrules {
+        width: 40%;
+        float: right;
+    }
+    .flrules dd ul {
+        width: 50px;
+    }
+    .cust_label {
+        text-align: center;
+        font-size: 13px;
+        font-weight: normal;
+        display: block;
+        margin-bottom:1px;
+    }
+    .novalue {
+        margin-bottom: 1px;
+    }
+
+
+
+
+    @media only screen and (min-width : 320px) and (max-width : 767px) {
+        .container-fluid {
+            margin-top: 56px;
+        }
+        .custom-col,.cust-flytime,.custom-col-route,.altwidth {
+            float: left;
+            width: 50%;
+            padding-left:5px;
+            padding-right:5px;
+        }
+        .planned-form {
+            padding: 0;
+        }
+
+        .nation, .forwidth, .endurance, .firtime, .fremark, .mod-remark {
+            float: left;
+        }
+
+        .custom-col-route {
+            width: 95%;
+            margin-top: -40px;
+        }
+        .altwidth {
+            width: 50%;
+            margin-right: 0 !important;
+        }
+        .altwidth:nth-child(3) {
+            width: 50%;
+        }
+
+        .nation {
+            width: 50%;
+            padding-left: 15px;
+        }
+        .forwidth {
+            width: 100%;
+            padding-left:5px;
+            padding-right:5px;
+        }
+        .route_box {
+            width: 100%;
+            float:left;
+            padding-left:5px;
+            padding-right:5px;
+        }
+        .nation {
+            margin-top:0;
+        }
+        .endurance  {
+            width: 50%;
+            padding-left: 5px;
+            padding-right: 0;
+        }
+
+        .frwidth {
+            float:left;
+            width: 50%;
+
+            padding-right:5px;
+        }
+
+        .frwidth .form-group {
+            float: left;
+            margin-bottom: 0;
+            width:100%;
+        }
+
+        .fir_box, .alt_helipad_box {
+            padding-left:5px;
+            padding-right:5px;
+        }
+        .fir_box .form-group {
+            margin-bottom: 10px;
+        }
+        .firtime {
+            width: 50%;
+        }
+        .fremark {
+            width: 100%;
+        }
+        .mod-remark {
+            width: 95%;
+
+        }
+
+
+
+        .remarks_box {
+            width:100%;
+            padding-left: 5px;
+            padding-right:5px;
+        }
+        .process_box {
+            float: right;
+            padding-right: 5px;
+            margin-top:0;
+        }
+    }
+    @media only screen and (min-width : 768px) and (max-width : 1024px) {
+        .custom-col,.cust-flytime,.custom-col-route,.altwidth {
+            float: left;
+            width: 26%;
+        }
+
+        .nation, .forwidth, .endurance, .firtime, .fremark, .mod-remark {
+            float: left;
+        }
+
+        .custom-col-route {
+            width: 38%;
+        }
+        .altwidth {
+            width: 33.33%;
+            margin-right: 0 !important;
+
+        }
+        .nation {
+            width: 20%;
+            padding-left: 15px;
+        }
+        .route_box {
+            margin-bottom:0;
+        }
+        .forwidth {
+            width: 100%;
+        }
+
+        .endurance  {
+            width: 28%;
+        }
+        .firtime {
+            width: 30%;
+        }
+        .frwidth {
+            width: 33.3%;
+            float: left;
+            margin-left: 34px;
+            padding-left: 40px;
+        }
+
+
+
+
+        .frwidth .form-group {
+            float:left;
+            margin-bottom: 0;
+            width: 100%;
+        }
+        .flrules dd ul {
+            width: 63px;
+        }
+        .fremark {
+            width: 50%;
+        }
+        .mod-remark {
+            width: 85%;
+            margin-right: 10px;
+        }
+        .remarks_box {
+            width: 84%;
+            float: left;
+        }
+        .process_box {
+            float:right;
+        }
+
+    }
+    @media only screen and (min-width: 1200px) {
+        .page_section,.cust-container  {
+            width:1000px;
+        }
+
+    }
+

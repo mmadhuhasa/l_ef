@@ -1,0 +1,238 @@
+
+@charset "UTF-8";
+@import url(animate.css);
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+
+/*@font-face {
+    font-family: 'pt_sansregular';
+    src: url('../../fonts/pts55f-webfont.eot');
+    src: url('../../fonts/pts55f-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/pts55f-webfont.woff2') format('woff2'),
+        url('../../fonts/pts55f-webfont.woff') format('woff'),
+        url('../../fonts/pts55f-webfont.ttf') format('truetype'),
+        url('../../fonts/pts55f-webfont.svg#pt_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*/
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 13px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 13px;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 13px;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 13px;
+}
+.callsign-sec {
+    /* background-color: #fff; */
+    box-shadow: 3px 3px 12px 0px #999;
+    width: 100%;
+    float: left;
+    font-size:13px;
+    padding:20px;
+    background: #ffffff;
+    margin: 15px 0;
+}
+.infor-row {
+    width: 100%;
+    float:left;
+}
+.callsign-sec .tableviewclass{
+    box-shadow:none !important;
+}
+.callsign-sec .search{
+    width:100%;
+}
+.search .callsignbtn{
+    width:auto !important;
+    padding:8px 17px !important;
+}
+.search .edit-callsign{
+    background-color:#f1292b;
+}
+.search .edit-callsign:hover{
+    box-shadow: inset 0 -100px 0 0 #fff !important;
+    color:#f1292b !important;
+    background-color:#fff;
+    font-weight:bold;
+}
+.search .save-callsign{
+    background-color:#fff;
+    color:#f1292b;
+    font-weight:bold;
+}
+.infor-row .q_filter{
+    width:auto !important;
+}
+.search-addon{
+    padding:0;
+}
+.search-addon .btn{
+    height:32px;
+}
+#result {
+    margin-top:10px;
+}
+@media (min-width: 1200px){
+    .infopage .container {
+        width: 1000px;
+    }
+}
+.ui-widget-content{
+    background: beige !important
+}
+table.dataTable thead .sorting, 
+table.dataTable thead .sorting_asc, 
+table.dataTable thead .sorting_desc {
+    background : none;
+}
+.tooltip-inner {
+    max-width: 350px;
+    /*max-height: 100px;*/
+    /*height: 100px;*/
+}
+
+.p-0 {
+    padding:0
+}
+.p-l-0 {
+    padding-left:0;
+}
+.p-r-0 {
+    padding-right:0;
+}
+.p-lr-0 {
+    padding-left:0;
+    padding-right:0;
+}
+.p-r-5 {
+    padding-right:5px;
+}
+
+.m-0 {
+    margin:0;
+}
+.m-tb-0 {
+    margin-top:0;
+    margin-bottom:0;
+}
+.m-lr-0 {
+    margin-left:0;
+    margin-right:0;
+}
+
+input[type=text] {
+    border-color: #555;
+}
+
+input[type=text]:focus {
+    border:1px solid red;
+    box-shadow: none;
+}
+
+.table-inverse {
+    background: #333;
+}
+
+.add_designation {
+    position: relative;
+}
+.add_designation:before {
+    position: absolute;
+    /*content:'\f0d7';*/
+    top:7px;
+    right:15px;
+    font-family: 'FontAwesome';
+    font-size: 16px;
+
+}
+.pi_edit_button {
+    position: relative;
+    color:#000;
+}
+.pi_edit_button:before {
+    position: absolute;
+    content: '\f044';
+    top: 7px;
+    left: 20px;
+    font-family: 'FontAwesome';
+    font-size: 16px;
+}
+
+table tr:nth-child(odd) td{
+    background: #ffffff;
+}
+table tr:nth-child(even) td{
+    background: #eeeeee;
+}
+
+.tableviewclass {
+    margin-top:20px;
+}
+
+.table-bordered>thead>tr>th {
+    border:none;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.tableviewclass, th:first-child {
+    border-top-left-radius: 7px;
+}
+
+.tableviewclass,th:last-child {
+    border-top-right-radius: 7px;
+}
+
+.get_callsign_info {
+    background: #000000;
+    color: #ffffff;
+}
+
+.get_callsign_info:hover {
+    color:#ffffff;
+}
+.sno{
+    width:3%;
+}
+.info_desig{
+    width:18%;
+}
+.inf_name{
+    width:25%;
+}
+.info_email{
+    width:28%;
+}
+.info_mob{
+    width:18%;
+}
+.info_icon{
+    width:7%;
+}
+.ai_edit_icon {
+    margin-left:0px;
+}
+.ai_edit_icon, .ai_trash_icon{
+    font-size: 16px;
+    color:black;
+}
+
+.ai_edit_icon:hover, .ai_trash_icon:hover {
+    color:red;
+}

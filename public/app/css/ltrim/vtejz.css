@@ -1,0 +1,29 @@
+.sec-container{
+	width:830px;
+	background: #fff;
+	font-family: arial,sans-serif;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.sec_vtejz{
+	width:650px;
+	margin-left: 50px;
+}
+.sec_vtejz{
+	border-top: 1px solid #333;
+}
+.sec_vtejz>thead>tr>th{
+	
+	border:1px solid #333;
+	font-weight: bold;
+	padding:0px; 
+	text-align: center;
+}
+.sec_vtejz>tbody>tr>td{
+	border:1px solid #333;
+	padding: 0px;
+	font-size: 11px;
+}
+.sec-cond>tbody>tr>td{
+	border:1px solid #333;
+}

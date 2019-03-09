@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+<style>
+* {
+	padding: 0;
+	margin: 0;
+}
+.bodyContainer {
+	font: normal 13px/16px Courier New;
+	margin: 40px;
+	border:2px dashed black;
+	padding: 15px;
+	color:#666666;
+	max-width:900px;
+	margin:0 auto;
+}
+strong {
+	color:#000;
+}
+h1 {
+	font-size: 130%;
+	text-align: center;
+	padding: 5px 0 20px 0;
+	color:#000;
+}
+h1 span {
+	display: inline-block;
+	padding-bottom: 3px;
+	border-bottom: 2px solid black;
+	font-weight: bold;
+	color:#000;
+}
+h2 {
+	font-size: 120%;
+	text-align: center;
+	padding: 5px 0;
+	color:#000;
+}
+.seperator {
+	border-top:1px dashed #000;
+	padding: 15px 0;
+}
+.bdbtm {
+	border-bottom:1px solid #999999;
+}
+td {
+	padding:2px 0;
+}
+.bdDataTable{
+	border:1px solid #949494;
+}
+.bdDataTable td{
+	border-right:1px solid #949494;
+	border-bottom:1px solid #949494;
+	padding:2px 4px;
+}
+td.noBtBorder{
+	border-bottom:0;
+}
+td.tpBorder{
+	border-top:1px solid #949494;
+}
+</style>
+</head>
+<body>
+<div class="bodyContainer">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td align="left" valign="top"><p align="center"><strong>MAIN  ROUTE NAV LOG</strong></p></td>
+    </tr>
+    <tr>
+      <td align="left" valign="top">
+      	<table class="bdDataTable" border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tr>
+            <td width="102" valign="bottom"></td>
+            <td width="60" valign="bottom"></td>
+            <td width="36" valign="bottom"></td>
+            <td width="35" valign="bottom"></td>
+            <td width="37" valign="bottom"></td>
+            <td width="54" valign="bottom"></td>
+            <td width="30" valign="bottom"></td>
+            <td width="60" colspan="2" valign="bottom"><p align="center"><strong>SPD KT</strong></p></td>
+            <td width="60" colspan="2" valign="bottom"><p align="center"><strong>DIST NM</strong></p></td>
+            <td width="78" colspan="2" valign="bottom"><p align="center"><strong>FUEL LB</strong></p></td>
+            <td width="30" valign="bottom"></td>
+            <td width="114" colspan="3" valign="bottom"><p align="center"><strong>TIME</strong></p></td>
+            <td width="30" valign="bottom"></td>
+          </tr>
+          <tr>
+            <td width="102" valign="bottom"><p align="center"><strong>WAYPOINT</strong></p></td>
+            <td width="60" valign="bottom"><p align="center"><strong>AIRWAY</strong></p></td>
+            <td width="36" valign="bottom"><p align="center"><strong>HDG</strong></p></td>
+            <td width="35" valign="bottom"><p align="center"><strong>CRS</strong></p></td>
+            <td width="37" valign="bottom"><p align="center"><strong>ALT</strong></p></td>
+            <td width="54" valign="bottom"><p align="center"><strong>WIND</strong></p></td>
+            <td width="30" valign="bottom"><p align="center"><strong>ISA</strong></p></td>
+            <td width="30" valign="bottom"><p align="center"><strong>TAS</strong></p></td>
+            <td width="30" valign="bottom"><p align="center"><strong>GS</strong></p></td>
+            <td width="30" valign="bottom"><p align="center"><strong>LEG</strong></p></td>
+            <td width="30" valign="bottom"><p align="center"><strong>REM</strong></p></td>
+            <td width="42" valign="bottom"><p align="center"><strong>USED</strong></p></td>
+            <td width="36" valign="bottom"><p align="center"><strong>REM</strong></p></td>
+            <td width="30" valign="bottom"><p align="center"><strong>ACT</strong></p></td>
+            <td width="42" valign="bottom"><p align="center"><strong>LEG</strong></p></td>
+            <td width="36" valign="bottom"><p align="center"><strong>REM</strong></p></td>
+            <td width="36" valign="bottom"><p align="center"><strong>ETE</strong></p></td>
+            <td width="30" valign="bottom"><p align="center"><strong>ACT</strong></p></td>
+          </tr>
+          <tr>
+            <td width="102" valign="bottom"><p align="center">VOBG</p></td>
+            <td width="60" valign="bottom"></td>
+            <td width="36" valign="bottom"><p align="center">-</p></td>
+            <td width="35" valign="bottom"><p align="center">-</p></td>
+            <td width="37" valign="bottom"><p align="center">2912</p></td>
+            <td width="54" valign="bottom"><p align="center">74/11</p></td>
+            <td width="30" valign="bottom"><p align="center">+16</p></td>
+            <td width="30" valign="bottom"><p align="center">0</p></td>
+            <td width="30" valign="bottom"><p align="center">0</p></td>
+            <td width="30" valign="bottom"><p align="center">-</p></td>
+            <td width="30" valign="bottom"><p align="center">479</p></td>
+            <td width="42" valign="bottom"><p align="center">350</p></td>
+            <td width="36" valign="bottom"><p align="center">9650</p></td>
+            <td width="30" valign="bottom"></td>
+            <td width="42" valign="bottom"><p align="center">-</p></td>
+            <td width="36" valign="bottom"><p align="center">1:13</p></td>
+            <td width="36" valign="bottom"><p align="center">-</p></td>
+            <td width="30" valign="bottom"></td>
+          </tr>
+          <tr>
+            <td width="102" valign="bottom"><p align="center">BIA<br>
+              BENGALURU 116.8</p></td>
+            <td width="60" valign="bottom"><p align="center">DCT</p></td>
+            <td width="36" valign="bottom"><p align="center">017</p></td>
+            <td width="35" valign="bottom"><p align="center">016</p></td>
+            <td width="37" valign="bottom"><p align="center">162</p></td>
+            <td width="54" valign="bottom"><p align="center">H6</p></td>
+            <td width="30" valign="bottom"><p align="center">+15</p></td>
+            <td width="30" valign="bottom"><p align="center">297</p></td>
+            <td width="30" valign="bottom"><p align="center">291</p></td>
+            <td width="30" valign="bottom"><p align="center">16</p></td>
+            <td width="30" valign="bottom"><p align="center">463</p></td>
+            <td width="42" valign="bottom"><p align="center">618</p></td>
+            <td width="36" valign="bottom"><p align="center">9382</p></td>
+            <td width="30" valign="bottom"></td>
+            <td width="42" valign="bottom"><p align="center">0:03</p></td>
+            <td width="36" valign="bottom"><p align="center">1:10</p></td>
+            <td width="36" valign="bottom"><p align="center">0:03</p></td>
+            <td width="30" valign="bottom"></td>
+          </tr>
+          <tr>
+            <td width="102" valign="bottom"><p align="center">-TOC-</p></td>
+            <td width="60" valign="bottom"><p align="center">W56N</p></td>
+            <td width="36" valign="bottom"><p align="center">337</p></td>
+            <td width="35" valign="bottom"><p align="center">337</p></td>
+            <td width="37" valign="bottom"><p align="center">400</p></td>
+            <td width="54" valign="bottom"><p align="center">T1</p></td>
+            <td width="30" valign="bottom"><p align="center">+12</p></td>
+            <td width="30" valign="bottom"><p align="center">399</p></td>
+            <td width="30" valign="bottom"><p align="center">399</p></td>
+            <td width="30" valign="bottom"><p align="center">75</p></td>
+            <td width="30" valign="bottom"><p align="center">388</p></td>
+            <td width="42" valign="bottom"><p align="center">1211</p></td>
+            <td width="36" valign="bottom"><p align="center">8789</p></td>
+            <td width="30" valign="bottom"></td>
+            <td width="42" valign="bottom"><p align="center">0:11</p></td>
+            <td width="36" valign="bottom"><p align="center">0:59</p></td>
+            <td width="36" valign="bottom"><p align="center">0:14</p></td>
+            <td width="30" valign="bottom"></td>
+          </tr>
+          <tr>
+            <td width="102" valign="bottom"><p align="center">OPAMO</p></td>
+            <td width="60" valign="bottom"><p align="center">W56N</p></td>
+            <td width="36" valign="bottom"><p align="center">337</p></td>
+            <td width="35" valign="bottom"><p align="center">337</p></td>
+            <td width="37" valign="bottom"><p align="center">400</p></td>
+            <td width="54" valign="bottom"><p align="center">T9</p></td>
+            <td width="30" valign="bottom"><p align="center">-1</p></td>
+            <td width="30" valign="bottom"><p align="center">467</p></td>
+            <td width="30" valign="bottom"><p align="center">476</p></td>
+            <td width="30" valign="bottom"><p align="center">16</p></td>
+            <td width="30" valign="bottom"><p align="center">372</p></td>
+            <td width="42" valign="bottom"><p align="center">1263</p></td>
+            <td width="36" valign="bottom"><p align="center">8737</p></td>
+            <td width="30" valign="bottom"></td>
+            <td width="42" valign="bottom"><p align="center">0:02</p></td>
+            <td width="36" valign="bottom"><p align="center">0:57</p></td>
+            <td width="36" valign="bottom"><p align="center">0:16</p></td>
+            <td width="30" valign="bottom"></td>
+          </tr>
+          <tr>
+            <td width="102" valign="bottom"><p align="center">BBI<br>
+              BELLARY 112.8</p></td>
+            <td width="60" valign="bottom"><p align="center">W56N</p></td>
+            <td width="36" valign="bottom"><p align="center">339</p></td>
+            <td width="35" valign="bottom"><p align="center">341</p></td>
+            <td width="37" valign="bottom"><p align="center">400</p></td>
+            <td width="54" valign="bottom"><p align="center">T7</p></td>
+            <td width="30" valign="bottom"><p align="center">-1</p></td>
+            <td width="30" valign="bottom"><p align="center">467</p></td>
+            <td width="30" valign="bottom"><p align="center">474</p></td>
+            <td width="30" valign="bottom"><p align="center">36</p></td>
+            <td width="30" valign="bottom"><p align="center">336</p></td>
+            <td width="42" valign="bottom"><p align="center">1388</p></td>
+            <td width="36" valign="bottom"><p align="center">8612</p></td>
+            <td width="30" valign="bottom"></td>
+            <td width="42" valign="bottom"><p align="center">0:05</p></td>
+            <td width="36" valign="bottom"><p align="center">0:52</p></td>
+            <td width="36" valign="bottom"><p align="center">0:21</p></td>
+            <td width="30" valign="bottom"></td>
+          </tr>
+          <tr>
+            <td width="102" valign="bottom"><p align="center">ALGIR</p></td>
+            <td width="60" valign="bottom"><p align="center">W56N</p></td>
+            <td width="36" valign="bottom"><p align="center">314</p></td>
+            <td width="35" valign="bottom"><p align="center">317</p></td>
+            <td width="37" valign="bottom"><p align="center">400</p></td>
+            <td width="54" valign="bottom"><p align="center">H4</p></td>
+            <td width="30" valign="bottom"><p align="center">-1</p></td>
+            <td width="30" valign="bottom"><p align="center">467</p></td>
+            <td width="30" valign="bottom"><p align="center">463</p></td>
+            <td width="30" valign="bottom"><p align="center">73</p></td>
+            <td width="30" valign="bottom"><p align="center">263</p></td>
+            <td width="42" valign="bottom"><p align="center">1645</p></td>
+            <td width="36" valign="bottom"><p align="center">8355</p></td>
+            <td width="30" valign="bottom"></td>
+            <td width="42" valign="bottom"><p align="center">0:09</p></td>
+            <td width="36" valign="bottom"><p align="center">0:43</p></td>
+            <td width="36" valign="bottom"><p align="center">0:30</p></td>
+            <td width="30" valign="bottom"></td>
+          </tr>
+          <tr>
+            <td width="102" valign="bottom"><p align="center">AGELA</p></td>
+            <td width="60" valign="bottom"><p align="center">W56N</p></td>
+            <td width="36" valign="bottom"><p align="center">315</p></td>
+            <td width="35" valign="bottom"><p align="center">318</p></td>
+            <td width="37" valign="bottom"><p align="center">400</p></td>
+            <td width="54" valign="bottom"><p align="center">H9</p></td>
+            <td width="30" valign="bottom"><p align="center">-1</p></td>
+            <td width="30" valign="bottom"><p align="center">467</p></td>
+            <td width="30" valign="bottom"><p align="center">458</p></td>
+            <td width="30" valign="bottom"><p align="center">46</p></td>
+            <td width="30" valign="bottom"><p align="center">217</p></td>
+            <td width="42" valign="bottom"><p align="center">1807</p></td>
+            <td width="36" valign="bottom"><p align="center">8193</p></td>
+            <td width="30" valign="bottom"></td>
+            <td width="42" valign="bottom"><p align="center">0:06</p></td>
+            <td width="36" valign="bottom"><p align="center">0:37</p></td>
+            <td width="36" valign="bottom"><p align="center">0:36</p></td>
+            <td width="30" valign="bottom"></td>
+          </tr>
+          <tr>
+            <td width="102" valign="bottom"><p align="center">100-MOLGO</p></td>
+            <td width="60" valign="bottom"><p align="center">MOLGO1D</p></td>
+            <td width="36" valign="bottom"><p align="center">305</p></td>
+            <td width="35" valign="bottom"><p align="center">309</p></td>
+            <td width="37" valign="bottom"><p align="center">400</p></td>
+            <td width="54" valign="bottom"><p align="center">H22</p></td>
+            <td width="30" valign="bottom"><p align="center">-1</p></td>
+            <td width="30" valign="bottom"><p align="center">467</p></td>
+            <td width="30" valign="bottom"><p align="center">445</p></td>
+            <td width="30" valign="bottom"><p align="center">51</p></td>
+            <td width="30" valign="bottom"><p align="center">166</p></td>
+            <td width="42" valign="bottom"><p align="center">1993</p></td>
+            <td width="36" valign="bottom"><p align="center">8007</p></td>
+            <td width="30" valign="bottom"></td>
+            <td width="42" valign="bottom"><p align="center">0:07</p></td>
+            <td width="36" valign="bottom"><p align="center">0:30</p></td>
+            <td width="36" valign="bottom"><p align="center">0:43</p></td>
+            <td width="30" valign="bottom"></td>
+          </tr>
+          <tr>
+            <td width="102" valign="bottom"><p align="center">-TOD-</p></td>
+            <td width="60" valign="bottom"><p align="center">MOLGO1D</p></td>
+            <td width="36" valign="bottom"><p align="center">305</p></td>
+            <td width="35" valign="bottom"><p align="center">309</p></td>
+            <td width="37" valign="bottom"><p align="center">400</p></td>
+            <td width="54" valign="bottom"><p align="center">H24</p></td>
+            <td width="30" valign="bottom"><p align="center">-1</p></td>
+            <td width="30" valign="bottom"><p align="center">467</p></td>
+            <td width="30" valign="bottom"><p align="center">443</p></td>
+            <td width="30" valign="bottom"><p align="center">82</p></td>
+            <td width="30" valign="bottom"><p align="center">84</p></td>
+            <td width="42" valign="bottom"><p align="center">2293</p></td>
+            <td width="36" valign="bottom"><p align="center">7707</p></td>
+            <td width="30" valign="bottom"></td>
+            <td width="42" valign="bottom"><p align="center">0:11</p></td>
+            <td width="36" valign="bottom"><p align="center">0:19</p></td>
+            <td width="36" valign="bottom"><p align="center">0:54</p></td>
+            <td width="30" valign="bottom"></td>
+          </tr>
+          <tr>
+            <td width="102" valign="bottom"><p align="center">VABB</p></td>
+            <td width="60" valign="bottom"><p align="center">MOLGO1D</p></td>
+            <td width="36" valign="bottom"><p align="center">320</p></td>
+            <td width="35" valign="bottom"><p align="center">322</p></td>
+            <td width="37" valign="bottom"><p align="center">40</p></td>
+            <td width="54" valign="bottom"><p align="center">295/12</p></td>
+            <td width="30" valign="bottom"><p align="center">+12</p></td>
+            <td width="30" valign="bottom"><p align="center">271</p></td>
+            <td width="30" valign="bottom"><p align="center">261</p></td>
+            <td width="30" valign="bottom"><p align="center">84</p></td>
+            <td width="30" valign="bottom"><p align="center">-</p></td>
+            <td width="42" valign="bottom"><p align="center">2914</p></td>
+            <td width="36" valign="bottom"><p align="center">7086</p></td>
+            <td width="30" valign="bottom"></td>
+            <td width="42" valign="bottom"><p align="center">0:19</p></td>
+            <td width="36" valign="bottom"><p align="center">-</p></td>
+            <td width="36" valign="bottom"><p align="center">1:13</p></td>
+            <td width="30" valign="bottom"></td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr>
+      <td align="left" valign="top">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="left" valign="top"><p align="center"><strong>ALTERNATE to VAAH</strong></p></td>
+    </tr>
+    <tr>
+      <td align="left" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="bdDataTable">
+        <tr>
+          <td width="102" valign="bottom"><p align="center">-TOC-</p></td>
+          <td width="60" valign="bottom"><p align="center">DCT</p></td>
+          <td width="36" valign="bottom"><p align="center">357</p></td>
+          <td width="35" valign="bottom"><p align="center">357</p></td>
+          <td width="37" valign="bottom"><p align="center">200</p></td>
+          <td width="54" valign="bottom"></td>
+          <td width="30" valign="bottom"><p align="center">+15</p></td>
+          <td width="30" valign="bottom"><p align="center">297</p></td>
+          <td width="30" valign="bottom"><p align="center">293</p></td>
+          <td width="30" valign="bottom"><p align="center">-</p></td>
+          <td width="30" valign="bottom"><p align="center">216</p></td>
+          <td width="42" valign="bottom"><p align="center">367</p></td>
+          <td width="36" valign="bottom"><p align="center">6718</p></td>
+          <td width="30" valign="bottom"></td>
+          <td width="42" valign="bottom"><p align="center">-</p></td>
+          <td width="36" valign="bottom"><p align="center">0:38</p></td>
+          <td width="36" valign="bottom"><p align="center">-</p></td>
+          <td width="30" valign="bottom"></td>
+        </tr>
+        <tr>
+          <td width="102" valign="bottom"><p align="center">-TOD-</p></td>
+          <td width="60" valign="bottom"><p align="center">DCT</p></td>
+          <td width="36" valign="bottom"><p align="center">357</p></td>
+          <td width="35" valign="bottom"><p align="center">357</p></td>
+          <td width="37" valign="bottom"><p align="center">200</p></td>
+          <td width="54" valign="bottom"><p align="center">H6</p></td>
+          <td width="30" valign="bottom"><p align="center">+14</p></td>
+          <td width="30" valign="bottom"><p align="center">423</p></td>
+          <td width="30" valign="bottom"><p align="center">417</p></td>
+          <td width="30" valign="bottom"><p align="center">173</p></td>
+          <td width="30" valign="bottom"><p align="center">43</p></td>
+          <td width="42" valign="bottom"><p align="center">1342</p></td>
+          <td width="36" valign="bottom"><p align="center">5743</p></td>
+          <td width="30" valign="bottom"></td>
+          <td width="42" valign="bottom"><p align="center">0:25</p></td>
+          <td width="36" valign="bottom"><p align="center">0:13</p></td>
+          <td width="36" valign="bottom"><p align="center">0:25</p></td>
+          <td width="30" valign="bottom"></td>
+        </tr>
+        <tr>
+          <td width="102" valign="bottom"><p align="center">VAAH</p></td>
+          <td width="60" valign="bottom"><p align="center">DCT</p></td>
+          <td width="36" valign="bottom"><p align="center">357</p></td>
+          <td width="35" valign="bottom"><p align="center">357</p></td>
+          <td width="37" valign="bottom"><p align="center">189</p></td>
+          <td width="54" valign="bottom"><p align="center">293/11</p></td>
+          <td width="30" valign="bottom"><p align="center">+14</p></td>
+          <td width="30" valign="bottom"><p align="center">193</p></td>
+          <td width="30" valign="bottom"><p align="center">189</p></td>
+          <td width="30" valign="bottom"><p align="center">43</p></td>
+          <td width="30" valign="bottom"><p align="center">-</p></td>
+          <td width="42" valign="bottom"><p align="center">1826</p></td>
+          <td width="36" valign="bottom"><p align="center">5259</p></td>
+          <td width="30" valign="bottom"></td>
+          <td width="42" valign="bottom"><p align="center">0:13</p></td>
+          <td width="36" valign="bottom"><p align="center">-</p></td>
+          <td width="36" valign="bottom"><p align="center">0:38</p></td>
+          <td width="30" valign="bottom"></td>
+        </tr>
+      </table>
+      <p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td align="left" valign="top"><table border="0" cellspacing="0" cellpadding="0" width="100%">
+        <tr>
+          <td valign="bottom"><p><strong>Airport</strong></p></td>
+          <td valign="bottom"><p align="center"><strong>WX</strong></p></td>
+          <td valign="bottom"><p align="center"><strong>TWR</strong></p></td>
+          <td valign="bottom"><p align="center"><strong>CLR</strong></p></td>
+          <td valign="bottom"><p align="center"><strong>GND</strong></p></td>
+          <td valign="bottom"><p align="center"><strong>ELEV</strong></p></td>
+          <td colspan="2" valign="bottom"><p align="right"><strong>LONGEST RWY</strong></p></td>
+        </tr>
+        <tr>
+          <td valign="bottom"><p>VOBG</p></td>
+          <td valign="bottom"><p align="center">128.25</p></td>
+          <td valign="bottom"><p align="center">123.5</p></td>
+          <td valign="bottom"><p align="center">N/A</p></td>
+          <td valign="bottom"><p align="center">N/A</p></td>
+          <td valign="bottom"><p align="center">2912</p></td>
+          <td valign="bottom"><p align="center">09 / 27</p></td>
+          <td valign="bottom"><p align="center">10846 ft</p></td>
+        </tr>
+        <tr>
+          <td valign="bottom"><p>VABB</p></td>
+          <td valign="bottom"><p align="center">126.4</p></td>
+          <td valign="bottom"><p align="center">122.5</p></td>
+          <td valign="bottom"><p align="center">121.85</p></td>
+          <td valign="bottom"><p align="center">121.9</p></td>
+          <td valign="bottom"><p align="center">      40</p></td>
+          <td valign="bottom"><p align="center">09 / 27</p></td>
+          <td valign="bottom"><p align="center">11312 ft</p></td>
+        </tr>
+        <tr>
+          <td valign="bottom"><p>VAAH</p></td>
+          <td valign="bottom"><p align="center">126.8</p></td>
+          <td valign="bottom"><p align="center">119.6</p></td>
+          <td valign="bottom"><p align="center">N/A</p></td>
+          <td valign="bottom"><p align="center">N/A</p></td>
+          <td valign="bottom"><p align="center">     189</p></td>
+          <td valign="bottom"><p align="center">05 / 23</p></td>
+          <td valign="bottom"><p align="center">11499 ft</p></td>
+        </tr>
+      </table></td>
+    </tr>
+    <tr>
+      <td align="left" valign="top">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="left" valign="top"><p>&nbsp;</p>
+        <div align="center">
+          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="bdDataTable">
+            <tr>
+              <td rowspan="2" valign="bottom"><p><strong>Winds Aloft</strong><strong> </strong></p></td>
+              <td colspan="2" valign="bottom"><p align="center"><strong>FL</strong><strong> 360 (ISA: -56°C)</strong></p></td>
+              <td colspan="2" valign="bottom"><p align="center"><strong>FL</strong><strong> 380 (ISA: -56°C)</strong></p></td>
+              <td colspan="2" valign="bottom"><p align="center"><strong>FL</strong><strong> 400 (ISA: -56°C)</strong></p></td>
+              <td colspan="2" valign="bottom"><p align="center"><strong>FL </strong><strong>430    (ISA: -56°C)</strong></p></td>
+              <td colspan="2" valign="bottom"><p align="center"><strong>FL</strong><strong> 450 (ISA: -56°C)</strong></p></td>
+            </tr>
+            <tr>
+              <td valign="bottom"><p><strong>WIND (COMP)</strong></p></td>
+              <td valign="bottom"><p align="right"><strong>ISA</strong></p></td>
+              <td valign="bottom"><p><strong>WIND (COMP)</strong></p></td>
+              <td valign="bottom"><p align="right"><strong>ISA</strong></p></td>
+              <td valign="bottom"><p><strong>WIND (COMP)</strong></p></td>
+              <td valign="bottom"><p align="right"><strong>ISA</strong></p></td>
+              <td valign="bottom"><p><strong>WIND (COMP)</strong></p></td>
+              <td valign="bottom"><p align="right"><strong>ISA</strong></p></td>
+              <td valign="bottom"><p><strong>WIND (COMP)</strong></p></td>
+              <td valign="bottom"><p align="right"><strong>ISA</strong></p></td>
+            </tr>
+            <tr>
+              <td valign="bottom" class="noBtBorder"><p>BIA</p></td>
+              <td valign="bottom" class="noBtBorder"><p>214/011 (T11)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">+9</p></td>
+              <td valign="bottom" class="noBtBorder"><p>188/017 (T17)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">+2</p></td>
+              <td valign="bottom" class="noBtBorder"><p>188/017 (T17)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">+2</p></td>
+              <td valign="bottom" class="noBtBorder"><p>186/012 (T11)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">-6</p></td>
+              <td valign="bottom" class="noBtBorder"><p>188/008 (T7)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">-12</p></td>
+            </tr>
+            <tr>
+              <td valign="bottom" class="noBtBorder"><p>-TOC-</p></td>
+              <td valign="bottom" class="noBtBorder"><p>225/015 (T5)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">+9</p></td>
+              <td valign="bottom" class="noBtBorder"><p>209/018 (T10)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">+1</p></td>
+              <td valign="bottom" class="noBtBorder"><p>209/018 (T10)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">+1</p></td>
+              <td valign="bottom" class="noBtBorder"><p>222/014 (T6)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">-6</p></td>
+              <td valign="bottom" class="noBtBorder"><p>240/012 (T1)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">-12</p></td>
+            </tr>
+            <tr>
+              <td valign="bottom" class="noBtBorder"><p>OPAMO</p></td>
+              <td valign="bottom" class="noBtBorder"><p>238/018 (T2)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">+9</p></td>
+              <td valign="bottom" class="noBtBorder"><p>227/023 (T7)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">+1</p></td>
+              <td valign="bottom" class="noBtBorder"><p>227/023 (T7)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">+1</p></td>
+              <td valign="bottom" class="noBtBorder"><p>236/020 (T3)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">-6</p></td>
+              <td valign="bottom" class="noBtBorder"><p>247/018 (H1)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">-12</p></td>
+            </tr>
+            <tr>
+              <td valign="bottom" class="noBtBorder"><p>BBI</p></td>
+              <td valign="bottom" class="noBtBorder"><p>238/018 (T3)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">+9</p></td>
+              <td valign="bottom" class="noBtBorder"><p>227/023 (T8)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">+1</p></td>
+              <td valign="bottom" class="noBtBorder"><p>227/023 (T8)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">+1</p></td>
+              <td valign="bottom" class="noBtBorder"><p>236/020 (T4)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">-6</p></td>
+              <td valign="bottom" class="noBtBorder"><p>247/018 (T1)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">-12</p></td>
+            </tr>
+            <tr>
+              <td valign="bottom" class="noBtBorder"><p>ALGIR</p></td>
+              <td valign="bottom" class="noBtBorder"><p>250/025 (H11)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">+9</p></td>
+              <td valign="bottom" class="noBtBorder"><p>243/030 (H10)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">+1</p></td>
+              <td valign="bottom" class="noBtBorder"><p>243/030 (H10)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">+1</p></td>
+              <td valign="bottom" class="noBtBorder"><p>248/026 (H10)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">-6</p></td>
+              <td valign="bottom" class="noBtBorder"><p>254/024 (H12)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">-12</p></td>
+            </tr>
+            <tr>
+              <td valign="bottom" class="noBtBorder"><p>AGELA</p></td>
+              <td valign="bottom" class="noBtBorder"><p>260/027 (H15)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">+8</p></td>
+              <td valign="bottom" class="noBtBorder"><p>256/034 (H17)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">+1</p></td>
+              <td valign="bottom" class="noBtBorder"><p>256/034 (H17)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">+1</p></td>
+              <td valign="bottom" class="noBtBorder"><p>259/033 (H18)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">-6</p></td>
+              <td valign="bottom" class="noBtBorder"><p>262/032 (H18)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">-12</p></td>
+            </tr>
+            <tr>
+              <td valign="bottom" class="noBtBorder"><p>100-MOLGO</p></td>
+              <td valign="bottom" class="noBtBorder"><p>260/027 (H19)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">+8</p></td>
+              <td valign="bottom" class="noBtBorder"><p>256/034 (H22)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">+1</p></td>
+              <td valign="bottom" class="noBtBorder"><p>256/034 (H22)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">+1</p></td>
+              <td valign="bottom" class="noBtBorder"><p>259/033 (H22)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">-6</p></td>
+              <td valign="bottom" class="noBtBorder"><p>262/032 (H23)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">-12</p></td>
+            </tr>
+            <tr>
+              <td valign="bottom" class="noBtBorder"><p>-TOD-</p></td>
+              <td valign="bottom" class="noBtBorder"><p>266/031 (H24)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">+8</p></td>
+              <td valign="bottom" class="noBtBorder"><p>259/037 (H25)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">0</p></td>
+              <td valign="bottom" class="noBtBorder"><p>259/037 (H25)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">0</p></td>
+              <td valign="bottom" class="noBtBorder"><p>261/039 (H28)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">-6</p></td>
+              <td valign="bottom" class="noBtBorder"><p>262/040 (H29)</p></td>
+              <td valign="bottom" class="noBtBorder"><p align="center">-12</p></td>
+            </tr>
+            <tr>
+              <td valign="bottom" class="tpBorder"></td>
+              <td colspan="2" valign="bottom" class="tpBorder"><p align="center"><strong>1h12m (-0:01) 2698 lbs&nbsp;<br>
+              </strong><strong>Avg WIND:</strong><strong>H9</strong></p></td>
+              <td colspan="2" valign="bottom" class="tpBorder"><p align="center"><strong>1h13m (-0:01)2625 lbs&nbsp;<br>
+              </strong><strong>Avg WIND:</strong><strong>H9</strong></p></td>
+              <td colspan="2" valign="bottom" class="tpBorder"><p align="center"><strong>1h13m (0:00)2564 lbs&nbsp;<br>
+              </strong><strong>Avg WIND:</strong><strong>H9</strong></p></td>
+              <td colspan="2" valign="bottom" class="tpBorder"><p align="center"><strong>1h14m (+0:01)2509 lbs&nbsp;<br>
+              </strong><strong>Avg WIND:</strong><strong>H10</strong></p></td>
+              <td colspan="2" valign="bottom" class="tpBorder"><p align="center"><strong>1h15m (+0:01) 2494 lbs&nbsp;<br>
+              </strong><strong>Avg WIND:</strong><strong>H10</strong></p></td>
+            </tr>
+          </table>
+        </div>
+      <p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td align="left" valign="top">&nbsp;</td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

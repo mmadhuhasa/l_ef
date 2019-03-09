@@ -1,0 +1,132 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 25, 2016, 3:53:00 PM
+    Author     : vivek
+*/
+@media (min-width:1200px) {
+    .cust-container {
+        width:930px;
+        background: #fff;
+        box-shadow: 0px 0px 3px 0px #999999;
+        margin:15px auto;
+    }
+}
+.p-lr-0 {padding-left: 0;padding-right: 0;}
+.m-b-15 {margin-bottom: 15px;}
+.text-bold {font-weight: bold;}
+/* Start of place holder styles */
+.ltrim_sec .popupHeader {
+    font-size: 14px;
+}
+.ltrim_sec div.dynamiclabel
+{
+    display: block;
+    position: relative;
+    text-align: left;
+}
+
+.ltrim_sec div.dynamiclabel label{
+    position: absolute;
+    color:#000;
+    font-size:11px;
+    font-weight:normal;
+    background: transparent;
+    /*            border: 1px solid #333;*/
+    border-radius: 2px;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    -khtml-border-radius:2px;
+    -webkit-backface-visibility: hidden;
+    top: 10px;          
+    -moz-transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    opacity: 0;
+    z-index: -1;
+    line-height: 0px;
+    white-space: nowrap;
+}
+.ltrim_sec div.dynamiclabel > *:focus{
+    border-color:#f1292b ;
+}
+.ltrim_sec div.dynamiclabel > *:not(:placeholder-shown) + label{
+    opacity: 1;
+    z-index:1;
+    top: -10px;
+    left:5px;
+    text-transform: uppercase;
+}
+.ltrim_sec div.dynamiclabel > *:focus + label{
+    opacity: 1;
+    z-index:1;
+    top: -10px;
+    left:5px;
+    text-transform: uppercase;
+}
+.ltrim_sec div.dynamiclabel [placeholder]::-webkit-input-placeholder {
+    transition: opacity 0.4s 0.4s ease;
+    text-align: left;
+}
+.ltrim_sec div.dynamiclabel [placeholder]:focus::-webkit-input-placeholder {
+    transition: opacity 0.4s 0.4s ease;
+    opacity: 0;
+}
+.ltrim_sec div.dynamiclabel .form-control {
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+}
+.ltrim_sec div.dynamiclabel .form-control:focus {
+    border-bottom: 1px solid #ff0000 ;
+}
+/* End of place holder styles */
+.vtobr_heading {
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 7px 0;
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+    font-family: 'pt_sansregular', sans-serif;
+    background: #a6a6a6;
+    background: -moz-linear-gradient(left, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+    background: -webkit-linear-gradient(left, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+    background: -o-linear-gradient(left, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+    background: -ms-linear-gradient(left, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+    background: linear-gradient(to right, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6a6a6', endColorstr='#a6a6a6', GradientType=1 );
+}
+.ui-datepicker-trigger {
+    right:6px;
+    top:4px;
+    height:24px;
+}
+select.form-control {
+    background-position-x: 95%;
+}
+.ltrim_sec .form-group {
+    margin-bottom: 25px;
+}
+.calc-sec {
+    font-size: 13px;
+}
+.calc_table, .calc_table>thead>tr>th, .calc_table>tbody>tr>td {border: 1px solid #000;text-align: center;padding: 4px;}
+.calc_table>thead>tr>th {
+    font-size: 12px;
+    font-weight: bold;
+    vertical-align: top;
+    text-transform: uppercase;
+    background: #f9f9f9;
+    width: 11%;
+}
+.calc_table>tbody>tr>td:nth-child(2) {
+    text-align: left;
+}
+.divide_text {width: 17%;border-top: 1px solid #000;text-align: center;float: right;margin-top: 2px;}
+.ltrim_sec input[type=radio] {margin:0;vertical-align: middle;}
+.jump_box {font-size: 14px;border: 1px solid #999;padding-top: 8px;padding-left: 4px; border-radius: 4px;line-height: 1.2; width: 100%;box-shadow: inset 0 1px 1px rgba(0,0,0,.075);height: 34px;}

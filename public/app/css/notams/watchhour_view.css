@@ -1,0 +1,176 @@
+.watchhours-block {
+    background: #f1f1f1;
+    border: 1px solid #ccc;
+    /*width: 48%;*/
+    margin: 1%;
+    padding: 10px;
+    font-size: 13px;
+}
+
+.watchhours-label {
+    font-weight: bold;
+}
+
+.aerodrome-name {
+    position: relative;
+    width: auto;
+}
+
+.aerodrome-name:hover .edit-tooltip {
+    visibility: visible;
+}
+
+.aerodrome-name:hover a {
+    color: #000;
+}
+
+.edit-tooltip {
+    background: #333;
+    color: #fff;
+    padding: 1px 13px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 11px;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    left: 34px;
+}
+
+.p-lr-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.week-days-label {
+    text-transform: uppercase;
+    /*width: 107px;*/
+}
+
+.watchhours-remarks {
+    /*width: 322px;*/
+}
+
+.watchhours-list:nth-child(odd) {
+    background: #ddd;
+}
+
+.margin-0 {
+    margin: 0px;
+}
+
+.watchhours-list {
+    background: #eee;
+    margin: 0px;
+}
+
+.watchhours-title {
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-right: 0px;
+}
+
+.label-head {
+    font-weight: bold;
+    /*text-align: center;*/
+    text-transform: uppercase;
+    /*border: 1px solid #ccc;*/
+    background: #F26232;
+    /* background: linear-gradient(to top, #fa9b5b, #F26232); */
+    background: #f1292b;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f1292b', endColorstr='#f37858');
+    background: -webkit-gradient(linear, left top, left bottom, from(#f1292b), to(#f37858));
+    background: -moz-linear-gradient(top, #f1292b, #f37858);
+    /*padding: 3px 2px;*/
+    border-bottom: 0px;
+    border-right: 1px solid #999;
+}
+
+.watch-time-row {
+    display: table;
+    margin: 0px;
+    width: 100%;
+    /*border-right: 1px solid #999;*/
+}
+
+.watchhours-content {
+    border: 1px solid #999;
+    padding-left: 2px;
+    display: table-cell;
+    float: none;
+    vertical-align: middle;
+    /*border-right: 0px;*/
+}
+
+.aerodrome-form-section {
+    margin: 15px 0px;
+    padding-left: 10px;
+}
+
+.aerodrome-input {
+    border-radius: 4px 0px 0 4px;
+    height: 30px;
+    text-transform: uppercase;
+}
+
+.search-btn {
+    width: 40px;
+    height: 30px;
+    padding: 6px 3px;
+    transition: all 0.25s ease;
+    overflow: hidden;
+    display: inline-block;
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: none;
+    background: #555;
+    z-index: 1;
+    border-radius: 0 4px 4px 0;
+}
+
+.search-btn:hover:before {
+    visibility: visible;
+    width: 200%;
+    left: -46%;
+}
+
+.search-btn:before {
+    -webkit-transition: all 0.35s ease;
+    -moz-transition: all 0.35s ease;
+    -o-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    -webkit-transform: skew(45deg, 0);
+    -moz-transform: skew(45deg, 0);
+    -ms-transform: skewX(45deg) skewY(0);
+    -o-transform: skew(45deg, 0);
+    transform: skew(45deg, 0);
+    -webkit-backface-visibility: hidden;
+    content: '';
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 100%;
+    /*background: #333;*/
+    background: #F26232;
+    background: linear-gradient(to top, #fa9b5b, #F26232);
+    background: #f1292b;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f37858', endColorstr='#f1292b');
+    background: -webkit-gradient(linear, left top, left bottom, from(#f37858), to(#f1292b));
+    background: -moz-linear-gradient(top, #f37858, #f1292b);
+    z-index: -1;
+    color: #fff;
+}
+
+.search-btn:hover {
+    box-shadow: none !important;
+}

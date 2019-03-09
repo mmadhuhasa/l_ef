@@ -1,0 +1,409 @@
+
+
+/* -----------  start of wheather section ------------*/
+.wheather_sec{
+    /*background-color:#fff;*/
+    box-shadow:3px 3px 12px 0px #999;
+    width:100%;
+    float:left;
+}
+.whe-header{
+    /*background-color:#fff;*/
+    width:100%;
+    float:left;
+    padding:5px 0px;
+}
+.whe-header .fa-plane{
+    font-size:16px;
+    line-height:0px;
+}
+.whe-header p{
+    margin:0;
+}
+.search-input{
+    width: 89%;
+    float: left;
+    border: none;
+    border-left: 2px solid #999;
+    border-top: 2px solid #999;
+    border-bottom: 2px solid #999;
+    padding: 0px 7px;
+    min-height: 27px;
+    line-height: 19px;
+    background-color: #fff;
+}
+.search-input:focus{
+    outline:0;
+    box-shadow:0px 0px 1px #f1292b;
+    border-color:#f1292b;
+    border-right: 2px solid #f1292b;
+}
+.search-input-btn{
+    width: 100%;
+    background-color: #999;
+    min-height: 27px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 27px;
+    cursor:pointer;
+}
+.search-input-btn:hover{
+    cursor:pointer;
+    background-color:#f1292b;
+    tansition:all 0.2s ease-in;
+}
+::-webkit-input-placeholder {
+    text-align:left;   
+    text-transform:capitalize; 
+    color:#666 !important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    text-align:left;  
+    text-transform:capitalize; 
+    color:#666 !important;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    text-align:left;  
+    text-transform:capitalize; 
+    color:#666 !important;
+}
+
+:-ms-input-placeholder {  
+    text-align:left;   
+    text-transform:capitalize;
+    color:#666 !important;
+}
+.fa-plane {
+    font: 400 22px/35px "FontAwesome";
+    color: #787b7d;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    font-weight:normal;
+}
+.ifr-vfr{
+    padding:3px 8px;
+    background-color:#333;
+    margin-left:10px;
+    text-transform:uppercase;
+    color:#dedede;
+    font-size:13px;
+    font-weight:bold;
+    letter-spacing:1px;	
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -ms-border-radius: 3px;
+}
+.whe-left-col{
+    width:100%;
+    float:left;
+    padding:5px 0px 15px 0px;
+}
+.whe-image{
+    height:150px;
+}
+.scattered-cloud{	
+    background:url(../../media/whe-icons/scattered-clouds.png) left no-repeat;
+    width:100%;
+    height:100%;
+}
+.sunny{	
+    background:url(../../media/whe-icons/sunny.png) left no-repeat;
+    width:100%;
+    height:100%;
+}
+.heavy-rain{	
+    background:url(../../media/whe-icons/heavy-rain.png) left no-repeat;
+    width:100%;
+    height:100%;
+}
+.light-rain{	
+    background:url(../../media/whe-icons/light-rain.png) left no-repeat;
+    width:100%;
+    height:100%;
+}
+.snow{	
+    background:url(../../media/whe-icons/snow.png) left no-repeat;
+    width:100%;
+    height:100%;
+}
+.fog{	
+    background:url(../../media/whe-icons/fog.png) left no-repeat;
+    width:100%;
+    height:100%;
+}
+
+.CBclouds-rain{	
+    background:url(../../media/whe-icons/CBclouds-rain.png) left no-repeat;
+    width:100%;
+    height:100%;
+}
+.Few-clouds{	
+    background:url(../../media/whe-icons/few-clouds.png) left no-repeat;
+    width:100%;
+    height:100%;
+}
+.haze{	
+    background:url(../../media/whe-icons/haze.png) left no-repeat;
+    width:100%;
+    height:100%;
+}
+.thunderstorm{	
+    background:url(../../media/whe-icons/thunderstorm.png) left no-repeat;
+    width:100%;
+    height:100%;
+}
+.CBclouds{	
+    background:url(../../media/images/whe-icons/CBclouds.png) left no-repeat;
+    width:100%;
+    height:100%;
+}
+.whe-temp{
+    text-align:left;
+    height:150px;
+}
+.whe-temp .main-degree{
+    font-size:4em;
+    color:#f1292b;
+    line-height:150px;
+}
+.left-dgr-visi p{
+    margin:0px;
+    font-size:13px;
+    padding-top:4px;
+}
+.wind-info{
+    position: relative;
+    box-sizing:initial;
+    width:60px;
+    height:60px;
+    padding:20px;
+    margin-top:15px;
+}
+.arrow {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    box-sizing:initial;
+    transition: all 2s;
+}
+.circle {
+    position: absolute;
+    box-sizing: border-box;
+    height: 60px;
+    width: 60px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    /*-webkit-clip-path: inset(0 50% 0 0);
+    clip-path: inset(0 50% 0 0);*/
+}
+.triangle {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #f1292b;
+    margin-top: -14%;
+    margin-left: 37%;
+    -webkit-clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    transition: all 2s;
+}
+
+.arrow:hover{
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    transition: all 2s;
+}
+.direction:before{
+    position:absolute;
+    content:"N";
+    top:22%;
+    left:45%;
+    font-size:12px;
+}
+.direction p{
+    position:absolute;
+    bottom:30%;
+    left:43%;
+    font-weight:bold;
+    box-sizing:border-box;
+}
+.wind-text{
+    float:left;
+    -webkit-font-smoothing:antialiased !important;
+    text-shadow:1px 1px 1px 1px rgba(0,0,0,0.005);
+    font-smooth: always;
+
+    /* <length> */
+    font-smooth: 2em;
+    letter-spacing:.5px;
+    text-align:center;
+}
+
+
+
+
+.watch-row{
+    width:100%;
+    float:left;
+}
+.weekdays{
+    font-size:16px;
+    color:#ed1c24 !important;
+}
+.forecast{
+    width:100%;
+    float:left;
+}
+.fore-head{
+    border-left:2px solid #ff8833;
+    border-top:1px solid #f5f5f5;
+    border-bottom:1px solid #f5f5f5;
+    background-color:#f5f5f5;
+    width:100%;
+    float:left;
+}
+.forectcolumn{
+    width:100%;
+    float:left;
+}
+.tc-temp-image img{
+    width:80px;
+    height:80px;
+}
+.hightemp:hover{
+    text-decoration:underline;
+    cursor:text;
+}
+.lowtemp:hover{
+    text-decoration:underline;
+    cursor:text;
+}
+.forectcolumn .fc-name{
+    padding:0px 0px 10px 0px;
+    font-size:14px;
+}
+.fcul{
+    width:100%;
+    float:left;
+    display:block;
+    margin:0;
+    padding:20px 0px 20px 0px;
+}
+.fcul li{
+    width:13.28751%;
+    float:left;
+    list-style-type:none;
+    box-sizing:border-box;
+    border-left:1px solid #ccc;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+}
+.fcul li:last-child{
+    border-right:1px solid #ccc;
+}
+.db-decode p{
+    color:#2D2D2D;
+    margin:5px;
+    letter-spacing:.5px;
+}
+
+
+
+
+/*
+@media (min-width: 900px) and (max-width:990px){
+.weather-page .container {
+    width: 840px;
+}
+}
+@media (min-width: 1230px) and (min-width:1390px){
+.weather-page .container {
+    width: 1040px !important;
+}
+}
+@media (min-width: 1400px) and (max-width:1499px){
+.weather-page .container {
+    width: 1200px;
+}
+}
+@media (min-width: 1500px){
+.weather-page .container {
+    width: 1270px;
+}
+}
+@media (min-width: 1600px){
+.weather-page .container {
+    width: 1370px;
+}
+}*/
+
+@media all and (max-width:670px){
+
+    .border-top-visible{
+        border-top:1px solid #ccc;
+    }
+    .m-t-20-visible{
+        margin-top:20px !important;
+    }
+    .whe-left-col {
+        padding:0px;
+    }
+}
+@media (max-width: 1000px){
+    .wheather_midd  .col-xs-12 + .col-xs-12,.wheather_midd .col-sm-6,.wheather_midd .col-xs-6{
+        margin-top: 0px;
+    }
+    @media all and (max-width:750px){
+        .fcul li{
+            width:50%;
+            border:1px solid #ccc;
+        }
+    }
+    @media all and (min-width:760px) and (max-width:1024px){
+        .fcul li{
+            width:25%;
+            border:1px solid #ccc;
+        }
+    }
+    @media screen and (max-device-width: 670px) and (orientation: landscape){
+        .whe-left-col .col-xs-12{
+            width:70%;
+        }
+        .whe-left-col .col-xs-12 + .col-xs-12{
+            width:30%;
+        }
+        .whe-left-col .border-top-visible{
+            border-top:1px solid transparent;
+        }
+    }
+    @media screen and (min-device-width:700px) and (max-device-width: 760px){
+        .whe-left-col .col-xs-12{
+            width:70%;
+        }
+        .whe-left-col .col-xs-12 + .col-xs-12{
+            width:30%;
+        }
+        .whe-left-col .border-top-visible{
+            border-top:1px solid transparent;
+        }
+    }
+    @media all and (min-width:1200px){
+
+        .windcirle-height{
+            height:140px;
+        }
+    }
+
+    /* ----------- end of wheather section ------------*/
+

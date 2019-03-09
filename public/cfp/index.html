@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nav Log</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+    <script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/wow.js"></script>
+    <style type="text/css">
+
+    </style>
+    <script>
+    $(function() {
+        var scroller = $('#scroller div.innerScrollArea');
+        var scrollerContent = scroller.children('ul');
+        scrollerContent.children().clone().appendTo(scrollerContent);
+        var curX = 0;
+        scrollerContent.children().each(function() {
+            var $this = $(this);
+            $this.css('left', curX);
+            curX += $this.outerWidth(true);
+        });
+        var fullW = curX / 2;
+        var viewportW = scroller.width();
+
+        // Scrolling speed management
+        var controller = {
+            curSpeed: 0,
+            fullSpeed: 2
+        };
+        var $controller = $(controller);
+        var tweenToNewSpeed = function(newSpeed, duration) {
+            if (duration === undefined)
+                duration = 600;
+            $controller.stop(true).animate({
+                curSpeed: newSpeed
+            }, duration);
+        };
+
+        // Pause on hover
+        scroller.hover(function() {
+            tweenToNewSpeed(0);
+        }, function() {
+            tweenToNewSpeed(controller.fullSpeed);
+        });
+
+        // Scrolling management; start the automatical scrolling
+        var doScroll = function() {
+            var curX = scroller.scrollLeft();
+            var newX = curX + controller.curSpeed;
+            if (newX > fullW * 2 - viewportW)
+                newX -= fullW;
+            scroller.scrollLeft(newX);
+        };
+        setInterval(doScroll, 20);
+        tweenToNewSpeed(controller.fullSpeed);
+
+        new WOW().init();
+
+        $(".login_button_head").click(function() {
+            $(".nav_login_form_sec").fadeToggle();
+        });
+
+        function openFaq(id) {
+            for (var i = 1; i < 9; i++) {
+                if (i == id) {
+                    $(".faq_ques" + i).css("border-color", "red");
+                    $(".faq_ques" + i).css("color", "red");
+                    $(".faq_ques" + i).css("margin-bottom", "2px");
+                    $(".faq_ans" + i).slideDown("fast");
+                } else {
+                    $(".faq_ques" + i).css("border-color", "#e9e6e6");
+                    $(".faq_ques" + i).css("color", "black");
+                    $(".faq_ques" + i).css("margin-bottom", "15px");
+                    $(".faq_ans" + i).slideUp();
+                }
+            }
+        }
+
+        $(".faq_ques1").click(function() {
+            openFaq(1);
+            // $(".faq_ans1").slideDown("fast");
+            // $(".faq_ans2, .faq_ans3, .faq_ans4, .faq_ans5, .faq_ans6, .faq_ans7, .faq_ans8").slideUp();
+        });
+        $(".faq_ques2").click(function() {
+            openFaq(2);
+            // $(".faq_ans2").slideDown("fast");
+            // $(".faq_ans1, .faq_ans3, .faq_ans4, .faq_ans5, .faq_ans6, .faq_ans7, .faq_ans8").slideUp();
+        });
+        $(".faq_ques3").click(function() {
+            openFaq(3);
+        });
+        $(".faq_ques4").click(function() {
+            openFaq(4);
+        });
+        $(".faq_ques5").click(function() {
+            openFaq(5);
+        });
+        $(".faq_ques6").click(function() {
+            openFaq(6);
+        });
+        $(".faq_ques7").click(function() {
+            openFaq(7);
+        });
+        $(".faq_ques8").click(function() {
+            openFaq(8);
+        });
+});
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-8 col-md-4">
+                    <img src="assets/images/logo.png" class="img-responsive" alt="logo">
+                </div>
+                <div class="col-xs-offset-1 col-xs-3 col-md-offset-7 col-md-1">
+                    <button type="button" class="btn login_button_head">Login</button>
+                </div>
+                <div class="nav_login_form_sec" style="display: none">
+                    <div class="tri_shape"></div>
+                    <form class="nav_login_form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Username">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn form-control login_button_form" value="Login">
+                        </div>
+                        <p class="forgot_pw"><a href="#">Forgot Password</a></p>
+                        <p class="change_pw"><a href="#">Change Password</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="sec1">
+        <img src="assets/images/header-bg.jpg" class="img-responsive">
+        <div class="main_banner_text">
+            <p class="">FLY MORE, PLAN &amp; PAY LESS.....</p>
+            <p class="wow fadeInLeftBig">ONLINE FPL</p>
+            <p class="wow fadeInRightBig" data-wow-delay="1s" style="animation-delay: 1s;">NOTAMS</p>
+            <p class="wow rollIn" data-wow-delay="2s" style="animation-delay: 2s;">WEATHER</p>
+            <p class="wow fadeInRightBig" data-wow-delay="3s" style="animation-delay: 3s;">FDTL</p>
+            <p class="wow rollIn" data-wow-delay="4s" style="animation-delay: 4s;">NAV LOG</p>
+            <p class="wow fadeInRightBig" data-wow-delay="5s" style="animation-delay: 5s;">LOAD TRIM</p>
+            <p class="wow fadeInDownBig" data-wow-delay="6s" style="animation-delay: 6s;">RUNWAY ANALYSIS</p>
+            <p class="wow fadeInUpBig" data-wow-delay="7s" style="animation-delay: 7s;">LICENSE REMINDER</p>
+        </div>
+    </section>
+    <section class="sec2">
+        <div class="container">
+            <div class="row">
+                <p style="text-align:center;font-size: 45px; line-height: 1.2;">Plan, File &amp; Go.
+                    <br>Anytime, Anywhere in India</p>
+                <div class="col-md-3 wow fadeInRight">
+                    <h3>Plan &amp; fly safe</h3>
+                    <p style="font-size: 13px; line-height: 1.7;">Fast, intuitive, web-based tool that assesses weather conditions, generates flight routes and files flight plans online from any internet connected device to all Airports in India connected via AFTN within seconds and also send ADC thru SMS. Created to simplify and automate the entire flight planning process to make flying more safer.</p>
+                </div>
+                <div class="col-md-3 wow fadeInRight" data-wow-delay="0.2s" style="animation-delay: 0.2s;">
+                    <h3>made for india</h3>
+                    <p style="font-size: 13px; line-height: 1.7;">Think globally, act locally has been the mantra for the last 2 years in development. With feedback from Pilots who wish to see an Indian company offer solution customised to varied Indian region needs, we are proud to offer Patented One-Stop Solution for both Pre &amp; Post Flight Services. Experience India’s 1st iOS &amp; Android APP exclusive for business aviation pilots.</p>
+                </div>
+                <div class="col-md-3 wow fadeInRight" data-wow-delay="0.4s" style="animation-delay: 0.4s;">
+                    <h3>cost savings</h3>
+                    <p style="font-size: 13px; line-height: 1.7;">Unlike Global Companies who charge for worldwide subscription, we tailor make service cost thereby giving at least 50% savings plus billing in Indian Rupee. Our integrated planning system reduces operating costs and ensures successful trips from beginning to end to any Airport in India. Get in touch with us today to know more about how you can start savings from the very next flight.</p>
+                </div>
+                <div class="col-md-3 wow fadeInRight" data-wow-delay="0.6s" style="animation-delay: 0.6s;" data-wow-delay="0.2s">
+                    <h3>24 X 7 support</h3>
+                    <p style="font-size: 13px; line-height: 1.7;">Our Support Team consists of FAA certified dispatchers &amp; CPL holders, who are just a Phone call away anytime of the day to help you process plans, file &amp; obtain clearance numbers. Our other mode of contacts can be even via Email or SMS or WhatsApp.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec3">
+        <div class="container p-lr-0">
+            <div class="col-md-7">
+                <p class="sec3_head">Stress free flying with a complete range of trip support services to simplify your flight planning.</p>
+                <p class="sec3_content">With a full range of capabilities including route generation, optimization, fuel flow calculations, filing plus access to airport and weather data makes EFLIGHT website a One-Stop Solution for all Flight Planning needs. Last minute change in PAX numbers or Fuel, common in business flights, can now be easily handled with our offline Load Trim APP. Calculations are customised to specific weight of Aircraft and print out is in same format as approved by DGCA for each Operator. Sign up for a FREE14-day trial and experience simplified trip support services.</p>
+            </div>
+            <div class="col-md-5">
+                <div class="route_sec wow fadeInUp">
+                    <h3>Route Generation</h3>
+                    <img class="route_img img-responsive" src="assets/images/route.png" width="60px" height="60px">
+                    <p>Unique dynamic route generation for worldwide Flights is fast and has unparalleled features and quality. Extensive case studies show that EFLIGHT delivers unmatched quality such as minimizing time or cost, avoiding FIR’s or countries, bypassing weather.</p>
+                </div>
+                <div class="fuel_sec wow fadeInUp" data-wow-delay="0.2s" style="animation-delay: 0.2s;">
+                    <img class="fuel_img img-responsive" src="assets/images/fuel.png" width="60px" height="60px">
+                    <h3>Fuel Flow Caluclation</h3>
+                    <p>Save fuel, time and cost with a flexible and reliable flight planning engine that meets your operational needs with state-of-the-art multi-dimensional data interpolation methods.</p>
+                </div>
+                <div class="fplan_sec wow fadeInUp" data-wow-delay="0.4s" style="animation-delay: 0.4s;">
+                    <h3>Flight Plan Optimization</h3>
+                    <img class="fplan_img img-responsive" src="assets/images/plan.png" width="60px" height="60px">
+                    <p>Plans are based on a flexible aircraft performance model that supports imported data from a wide variety of different aircraft. The performance calculations deliver high precision results, even with low fidelity performance data. Supports EO-OPS, FAA-OPS, Reduced Contingency Fuel (RCF) scenarios and even extended operations (ETOPS) calculations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec4">
+        <div class="container">
+            <div class="col-md-6">
+                <img src="assets/images/video.png">
+            </div>
+            <div class="col-md-6">
+                <img src="assets/images/video.png">
+            </div>
+        </div>
+    </section>
+    <section class="sec5">
+        <div class="container">
+            <div class="row">
+                <p>Get to know more About Us</p>
+            </div>
+        </div>
+    </section>
+    <section class="sec6">
+        <div class="container p-lr-0">
+            <div class="row">
+                <p class="our_plans_text">Our Plans</p>
+                <div class="col-md-3 plans_details wow fadeInLeft" data-wow-delay="0.2s" style="animation-delay: 0.2s;">
+                    <h3>BASIC</h3>
+                    <p>Online Flight Planning</p>
+                    <p class="b_top">FIC-ADC via SMS</p>
+                    <p class="b_top">iOS &amp; Android Mobile APP</p>
+                    <p class="b_top">Notams on Maps</p>
+                    <p class="b_top">Weather Decoded</p>
+                    <p class="b_top">FDTL Offline Calculator</p>
+                    <p class="req_quote_sec"><a class="req_quote_btn" href="#">REQUEST QUOTE</a></p>
+                </div>
+                <div class="col-md-3 plans_details wow fadeInLeft">
+                    <h3>STARTER</h3>
+                    <p>All Basic Plan Features Plus</p>
+                    <p class="b_top">NAV LOG based on latest Winds</p>
+                    <p class="b_top">Unlimited Test Plans</p>
+                    <p class="b_top">Load Trim as per approved format</p>
+                    <p class="b_top">Load Trim works offline in APP</p>
+                    <p class="b_top">24 x 7 Dispatch Support</p>
+                    <p class="req_quote_sec"><a class="req_quote_btn" href="#">REQUEST QUOTE</a></p>
+                </div>
+                <div class="col-md-3 plans_details wow fadeInRight">
+                    <h3>PROFESSIONAL</h3>
+                    <p>All Starter Plan Features Plus</p>
+                    <p class="b_top">APG Runway Analysis</p>
+                    <p class="b_top">Single Engine Procedure</p>
+                    <p class="b_top">6,000 Worldwide Airports</p>
+                    <p class="b_top">iPAD APP</p>
+                    <p class="b_top">24 x 7 Dispatch Support</p>
+                    <p class="req_quote_sec"><a class="req_quote_btn" href="#">REQUEST QUOTE</a></p>
+                </div>
+                <div class="col-md-3 plans_details wow fadeInRight" data-wow-delay="0.2s" style="animation-delay: 0.2s;">
+                    <h3>PREMIUM</h3>
+                    <p>All Professional Plan Features Plus</p>
+                    <p class="b_top">Login Access to 2 Pilots</p>
+                    <p class="b_top">Perform NAV LOG, LOAD TRIM</p>
+                    <p class="b_top">Check RUNWAY ANANLYSIS</p>
+                    <p class="b_top">24 x 7 Dispatch Support</p>
+                    <p style="visibility: hidden">a</p>
+                    <p class="req_quote_sec"><a class="req_quote_btn" href="#">REQUEST QUOTE</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec7">
+        <div class="container">
+            <div class="row">
+                <p class="faq_text">FAQ</p>
+                <div class="col-md-6">
+                    <p class="faq_ques1">Lorem ipsum dolor<span class="acc_icon fa fa-plus"></span></p>
+                    <p class="faq_ans1">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                    <p class="faq_ques2">Conse ctetur adipisicing<span class="acc_icon fa fa-plus"></span></p>
+                    <p class="faq_ans2">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                    <p class="faq_ques3">Elit sed do eiusmod tempor<span class="acc_icon fa fa-plus"></span></p>
+                    <p class="faq_ans3">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                    <p class="faq_ques4">Incididunt ut labore<span class="acc_icon fa fa-plus"></span></p>
+                    <p class="faq_ans4">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                </div>
+                <div class="col-md-6">
+                    <p class="faq_ques5">Et dolore magna aliqua<span class="acc_icon fa fa-plus"></span></p>
+                    <p class="faq_ans5">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                    <p class="faq_ques6">Ut enim ad minim veniam<span class="acc_icon fa fa-plus"></span></p>
+                    <p class="faq_ans6">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                    <p class="faq_ques7">Quis nostrud exercitation<span class="acc_icon fa fa-plus"></span></p>
+                    <p class="faq_ans7">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                    <p class="faq_ques8">Ullamco laboris nisi<span class="acc_icon fa fa-plus"></span></p>
+                    <p class="faq_ans8">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec8">
+        <!-- <img src="assets/images/ebanner.jpg" alt="banner" width="100%"> -->
+        <div id="cfp_contact">
+        <div class="container" >
+            <div class="row">
+            <div class="col-md-4">
+            <p class="ebanner_text">EFLIGHT offers low operating and direct running cost with the 
+            highest cost/ benefit ratio among all our competitors. Get in touch with us to know more about why we are India’s No. 1 Domestic Trip Support Company &amp; how you can avail FREE 14-day trial with No Obligation for Contract &amp; Zero Cancellation Fee.</p>
+            </div>
+            <div class="col-md-offset-4 col-md-4">
+            <form class="cfp_contact_form">
+                <h1>Get in Touch</h1>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" placeholder="Full Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" placeholder="Phone">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <textarea class="form-control" placeholder="Message" rows="4"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <input type="button" class="btn btn-danger" value="send">
+                    </div>
+                </div>
+            </form>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="sec9">
+    </section>
+    <section class="sec10">
+        <div class="container">
+            <div class="row">
+                <p class="clients_head">Our Clients</p>
+                <div id="scroller" style="width: 100%; height: 75px; margin: 0 auto;">
+                    <div class="innerScrollArea">
+                        <ul>
+                            <!-- Define photos here -->
+                            <li class="image1"></li>
+                            <li class="image2"></li>
+                            <li class="image3"></li>
+                            <li class="image4"></li>
+                            <li class="image5"></li>
+                            <li class="image6"></li>
+                            <li class="image7"></li>
+                            <li class="image8"></li>
+                            <li class="image9"></li>
+                            <li class="image10"></li>
+                            <li class="image11"></li>
+                            <li class="image12"></li>
+                            <li class="image13"></li>
+                            <li class="image14"></li>
+                            <li class="image15"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec11">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="contact_us_text">Contact Us</p>
+                    <div class="address_sec">
+                        <p class="comp_name">Eflight</p>
+                        <p>AGR Plaza, L-150,</p>
+                        <p>5th Main, 6th Sector</p>
+                        <p>HSR Layout, Bangalore-560102</p>
+                    </div>
+                    <div class="contact_no_sec">
+                        <p class="phone_no1"><a href="tel:+919449485515">+91 9449485515</a><span style="font-weight: normal;"> (Support)</span></p>
+                        <p class="phone_no2"><a href="tel:+919886454717">+91 9886454717</a><span style="font-weight: normal"> (Sales)</span></p>
+                        <p class="email_info"><a href="mailto:info@eflight.aero">info@eflight.aero</a></p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="cu-map">
+                        <div id="map" style="border: 1px solid #ccc;">
+                            <iframe class="contactmap" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://localhost:8080/site1/assets/map/map.html" style=" width: 100%;"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

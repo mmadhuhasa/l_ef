@@ -1,0 +1,500 @@
+  .airport-item {
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      padding: 0px 3px;
+      background: #f5f5f5;
+      margin: 0 3px;
+      min-width: 64px;
+      display: inline-block;
+      text-align: center;
+      text-transform: uppercase;
+      cursor: default;
+      font-size: 13px;
+  }
+  
+  .profile-calendar-event-add-error-message {
+      width: auto;
+      text-transform: uppercase;
+      font-size: 11px;
+      color: #f1292b;
+      font-weight: bold;
+      padding-left: 7px;
+      display: inline-block;
+  }
+  
+  .profile-label-section {
+      margin: 10px 0px;
+  }
+  
+  #calendar1 a:hover {
+      color: inherit;
+  }
+  
+  .no-event-message {
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: bold;
+      color: #f1292b;
+      text-align: center;
+      padding-bottom: 5px;
+  }
+  
+  .li-event {
+      padding: 0px !important;
+      font-size: 12px;
+      font-weight: bold;
+      font-style: italic;
+      color: #000;
+  }
+  
+  .profile-label-value {
+      color: #333;
+      font-weight: bold;
+      padding-left: 4px;
+      font-style: italic;
+      font-size: 13px;
+      position: relative;
+  }
+  
+  .sec_mar {
+      padding-bottom: 20px;
+  }
+  
+  .md-content .edit-button {
+      font-family: 'pt_sansregular';
+      float: left;
+  }
+  
+  .md-content .save-btn {
+      font-family: 'pt_sansregular';
+      float: right;
+  }
+  
+  .checkbox label {
+      padding-left: 0px;
+  }
+  
+  .tooltip-stats {
+      position: absolute;
+      background: #333;
+      color: #fff;
+      font-size: 11px;
+      padding: 0 4px;
+      border-radius: 4px;
+      font-style: normal;
+      font-weight: normal;
+      top: 109px;
+      left: 123px;
+      visibility: hidden;
+      font-family: 'pt_sansregular';
+  }
+  
+  .tooltip-stats:before {
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid #333;
+      border-bottom: 5px solid transparent;
+      border-top: 5px solid transparent;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: -10px;
+      top: 0px;
+      margin: auto;
+  }
+  
+  .stats-icon:hover .tooltip-stats {
+      visibility: visible;
+  }
+  
+  .profile-label {
+      text-transform: uppercase;
+      color: #f1292b;
+      font-weight: bold;
+      font-style: italic;
+      padding-left: 0px;
+      font-size: 13px;
+  }
+  
+  .fav-input {
+      height: 30px;
+      border-color: #ccc;
+  }
+  
+  .fav-input[disabled] {
+      background: #f5f5f5;
+  }
+  
+  .stats-strip {
+      margin: 10px 0px;
+      padding-left: 15px;
+  }
+  
+  .stats-strip2 {
+      margin-left: 16%;
+  }
+  
+  .dash-box {
+      font-size: 13px;
+      width: 25%;
+      border: 1px solid #ccc;
+      border-radius: 7px;
+      /*margin-left: 15px;*/
+      float: left;
+      padding-left: 5px;
+      height: 75px;
+      background: #f26232;
+      color: #fff;
+  }
+  
+  .dash-box-label {
+      margin-top: -16px;
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 14px;
+      padding-left: 4px;
+  }
+  
+  .dash-box-icon {
+      font-size: 30px;
+      padding-top: 10px;
+  }
+  
+  .dash-box-value {
+      font-weight: bold;
+      font-size: 34px;
+      padding-left: 29px;
+      margin-top: 3px;
+  }
+  
+  .dash-box-n {
+      border: 1px solid #ccc;
+      width: 16%;
+      border-radius: 5px;
+      height: 70px;
+      float: left;
+  }
+  
+  .dash-box-n2 {
+      width: 19%;
+  }
+  
+  .dash-box-n-value {
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 31px;
+      font-weight: bold;
+      background: #fff;
+      color: #000;
+      border-radius: 5px 5px 0 0;
+  }
+  
+  .dash-box-n-label {
+      text-align: center;
+      color: #fff;
+      background: #333;
+      border-radius: 0 0 5px 4px;
+      font-size: 12px;
+  }
+  
+  .airport-strip .icon-green {
+      margin: 0px;
+  }
+  
+  .eflight-img {
+      width: 32px;
+  }
+  
+  .mobileapp-img {
+      width: 25px;
+  }
+  
+  .plan-till-img {
+      width: 32px;
+  }
+  
+  .month-img-icon {
+      width: 32px;
+  }
+  
+  .year-img-icon {
+      width: 32px;
+      width: 40px;
+      margin-left: -12px;
+  }
+  
+  .close-arrow {
+      margin-left: 10px;
+  }
+  
+  .delete-text {
+      font-size: 18px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+  }
+  
+  .align-center {
+      text-align: center;
+  }
+  
+  .airport-strip {
+      /*margin-top: 10px;*/
+      height: 30px;
+      padding-top: 3px;
+  }
+  
+  .cust-container {
+      margin: 15px auto;
+      background: #fff;
+      width: 900px;
+      border-radius: 10px 10px 0 0;
+      box-shadow: 0 3px 3px 1px #999999;
+  }
+  
+  .p-lr-0 {
+      padding-left: 0;
+      padding-right: 0;
+  }
+  
+  .content_box {
+      padding-left: 0;
+      padding-right: 0;
+      margin: 1px;
+      position: relative;
+  }
+  
+  .p-l-0 {
+      padding-left: 0;
+  }
+  
+  .p-tb-5 {
+      padding-top: 5px;
+      padding-bottom: 5px;
+  }
+  
+  .p-r-8 {
+      padding-right: 8px;
+  }
+  
+  .p-l-8 {
+      padding-left: 8px;
+  }
+  
+  .f-14 {
+      font-size: 14px;
+      margin-bottom: 10px;
+  }
+  
+  .profile_heading {
+      margin-top: -10px;
+      margin-bottom: 15px;
+      text-align: center;
+      padding: 7px 0;
+      font-weight: 600;
+      font-size: 15px;
+      color: #fff;
+      font-family: 'pt_sansregular', sans-serif;
+      background: #a6a6a6;
+      background: -moz-linear-gradient(left, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+      background: -webkit-linear-gradient(left, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+      background: -o-linear-gradient(left, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+      background: -ms-linear-gradient(left, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+      background: linear-gradient(to right, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+      filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a6a6a6', endColorstr='#a6a6a6', GradientType=1);
+      border-radius: 10px 10px 0 0;
+      text-transform: uppercase;
+  }
+  
+  .profile_left_sec {
+      font-size: 14px;
+      padding: 0;
+      margin-top: 10px;
+  }
+  
+  .edit_icon {
+      width: 19px;
+      height: 22px;
+      padding: 2px;
+      border-radius: 4px;
+      position: absolute;
+      font-size: 17px;
+      text-align: center;
+      left: 227px;
+      top: 3px;
+      color: #555;
+      cursor: pointer;
+      display: none;
+  }
+  
+  .content_box:hover .edit_icon {
+      display: block;
+  }
+  
+  .content_box:hover {
+      background: #eee;
+  }
+  
+  #statsmodal .modal-container {
+      width: 900px !important;
+      margin: auto !important;
+      top: 50%;
+  }
+  
+  .cursor-no-drop {
+      cursor: no-drop;
+  }
+  
+  .warning-icon-calendar {
+      position: absolute;
+      top: -25px;
+      width: 21px;
+      right: 0px;
+  }
+  
+  .stats-icon {
+      color: #f00;
+      cursor: pointer;
+      width: 20px;
+  }
+  
+  #statsmodal .popupHeader {
+      text-align: center;
+  }
+  
+  .edit_icon i {
+      color: red;
+      font-weight: bold;
+  }
+  
+  .subscription-end-date {
+      color: red;
+      font-weight: bold;
+  }
+  
+  .title_text {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      text-align: left;
+      font-weight: bold;
+      text-transform: uppercase;
+  }
+  
+  .checkbox-style {
+      font-style: italic;
+      font-size: 12px;
+      cursor: not-allowed;
+  }
+  
+  .uppercase {
+      text-transform: uppercase;
+  }
+  
+  .user-roles {
+      color: #000 !important;
+  }
+  
+  .icon-green {
+      font-size: 12px;
+      border: 2px solid green;
+      border-radius: 14px;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      color: green;
+      margin: 8px;
+      cursor: pointer;
+      line-height: 1.4;
+  }
+  
+  .icon-red {
+      font-size: 12px;
+      border: 2px solid #f1292b;
+      border-radius: 20px;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      color: #f1292b;
+      cursor: pointer;
+      line-height: 1.35;
+  }
+  
+  .btn-upload {
+      width: initial;
+      height: 23px;
+      padding: 0 8px;
+      font-size: 11px;
+      background: #333;
+      color: #fff;
+  }
+  
+  #profile .form-control {
+      text-align: left;
+      height: 26px;
+  }
+  
+  .placeholder-img-profile {
+      width: 100px;
+      background: #ccc;
+      border-radius: 50px;
+      padding: 5px;
+      display: block;
+      margin: auto;
+  }
+  
+  .profile-img-section {
+      text-align: center;
+  }
+  
+  .profile-tab-active:before {
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid #fff;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+  }
+  
+  .divider-line {
+      float: left;
+      background: #F26232;
+      /* background: linear-gradient(to top, #fa9b5b, #F26232); */
+      background: #f1292b;
+      filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f1292b', endColorstr='#f37858');
+      background: -webkit-gradient(linear, left top, left bottom, from(#f1292b), to(#f37858));
+      background: -moz-linear-gradient(top, #f1292b, #f37858);
+      color: #fff;
+      height: 1px;
+      /*border-bottom: 1px solid #000;*/
+      margin-bottom: 5px;
+  }
+  
+  .profile-tab {
+      float: left;
+      width: 25%;
+      background: #F26232;
+      /* background: linear-gradient(to top, #fa9b5b, #F26232); */
+      background: #f1292b;
+      filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f1292b', endColorstr='#f37858');
+      background: -webkit-gradient(linear, left top, left bottom, from(#f1292b), to(#f37858));
+      background: -moz-linear-gradient(top, #f1292b, #f37858);
+      color: #fff;
+      border-right: 1px solid #ccc;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      position: relative;
+  }
+  
+  .p-r-0 {
+      padding-right: 0px;
+  }

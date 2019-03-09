@@ -1,0 +1,68 @@
+.p-lr-0 {padding-left: 0;padding-right: 0;}
+.m-b-15 {margin-bottom: 15px;}
+.cust-container {
+   width: 1000px;
+    background: #fff;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 0px 3px 1px #999999;
+}
+.wx_decoded, .taf_decoded {
+    font-size: 13px;
+    background: #F9F9F9;
+    padding: 15px;
+    margin-bottom: 13px;
+    border-radius: 5px;
+    width: 48%;
+    margin-left: 13px;
+}
+.colon {
+    width: 3%;
+}
+.spec {
+    width: 10%;
+    margin-right:10px;
+}
+.dib {
+    display: inline-block;
+    width: 100%;
+}
+
+.wx_head {
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 7px 0;
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+    font-family: 'pt_sansregular', sans-serif;
+    background: #a6a6a6;
+    background: -moz-linear-gradient(left, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+    background: -webkit-linear-gradient(left, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+    background: -o-linear-gradient(left, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+    background: -ms-linear-gradient(left, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+    background: linear-gradient(to right, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6a6a6', endColorstr='#a6a6a6', GradientType=1 );
+}
+.text-bold{
+    font-weight: bold;
+}
+.trend_head_text {
+    color: #888;
+    text-decoration: underline;
+    margin-top:10px;
+    display: inline-block;
+    width: 100%;
+}
+.search-addon {
+    padding: 0;
+}
+.search_btn {
+ width:40px;
+ height: 34px;
+ margin-top: -1px;
+ z-index: 1;
+ padding:5px;
+ border-radius: 0 4px 4px 0;
+}
+.airport_code {text-transform: uppercase;font-weight: bold;}

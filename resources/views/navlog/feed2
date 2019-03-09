@@ -1,0 +1,15 @@
+less contigency from  additional
+taxi , reserve fixed , fuel and time 
+before process , min and max fuel
+departure time in ist ()
+arrival time in hr mins
+arrival time ist ,
+flying time 4 digits 
+extraTime , round to next.
+endurance , total time 
+VABF0030 VOMF0117 logic for eet 
+depature time in atcfpl remove z , remove space before time 
+
+timing missing with avg wind section . fuel alignment . 
+
+fl below -56c 

@@ -1,0 +1,19 @@
+.sec-container{
+	width:900px;
+	background: #fff;
+	font-family: arial,sans-serif;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.sec-vtdbc>thead>tr>th{
+	border:1px solid #333;
+	font-weight: bold;
+	padding:0px; 
+	text-align: center;
+}
+.sec-vtdbc>tbody>tr>td{
+	border:1px solid #333;
+	padding: 0px;
+	font-size: 11px;
+	text-align: center;
+}

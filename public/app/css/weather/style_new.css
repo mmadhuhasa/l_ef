@@ -1,0 +1,128 @@
+.p-lr-0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+.cust-container {
+    width: 1000px;
+    background: #fff;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 0px 3px 1px #999999;
+}
+.wx_decoded {
+    font-size: 13px;
+    background: #EEEEEE;
+    padding: 15px;
+    margin-bottom: 13px;
+    border-radius: 5px;
+    width: 48%;
+    margin-left: 13px;
+}
+.colon {
+    width: 3%;
+}
+.spec {
+    width: 10%;
+    margin-right:10px;
+}
+.dib {
+    display: inline-block;
+    width: 100%;
+}
+
+.wx_head {
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 7px 0;
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+    font-family: 'pt_sansregular', sans-serif;
+    background: #a6a6a6;
+    background: -moz-linear-gradient(left, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+    background: -webkit-linear-gradient(left, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+    background: -o-linear-gradient(left, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+    background: -ms-linear-gradient(left, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+    background: linear-gradient(to right, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6a6a6', endColorstr='#a6a6a6', GradientType=1 );
+}
+.text-bold{
+    font-weight: bold;
+}
+.trend_head_text {
+    color: #000 !important;
+    margin-top:10px;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: -10px;
+    border-bottom: none !important;
+}
+.weather_forecast_sec {
+    font-size: 12px;
+    background: #f9f9f9;
+    color: #000;
+    font-family: 'pt_sansregular', sans-serif;
+    padding: 0;
+    margin-bottom: 20px;
+    
+}
+.airport_name_head {
+    background: #F26232;
+    background: linear-gradient(to top, #f1292b, #f37858);
+    background: #f1292b; /* for non-css3 browsers */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f1292b', endColorstr='#f37858'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#f1292b), to(#f37858)); /* for webkit browsers */
+    background: -moz-linear-gradient(top, #f1292b, #f37858); /* for firefox 3.6+ */
+    text-align: center;
+    padding: 3px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.temp_text {
+    font-size: 45px;
+    height: 50px;
+    padding: 15px 0px 5px 0;
+    letter-spacing: 0px;
+    text-align: right;
+}
+.wx_text {
+    text-align: right;
+    padding-right: 3px;
+    font-size: 14px;
+    font-style: italic;
+}
+.wind_sec {
+    clear: both;
+
+    margin: 10px 0;
+    text-align: center;
+}
+.wind_image {
+    height: 50px !important;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+.wind_speed {
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 10px;
+}
+.weather_forecast_right_sec {
+    font-family: 'pt_sansregular', sans-serif;
+    padding: 0 10px 0 5px;
+}
+.weather_forecast_right_sec p {
+    border-bottom: 1px solid #ccc;
+    padding: 6px 4px 1px 4px;
+    color: #555;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+.last_updated {text-align: right;color:grey;margin:10px 0;}
+

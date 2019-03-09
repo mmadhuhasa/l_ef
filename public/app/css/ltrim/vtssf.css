@@ -1,0 +1,118 @@
+body{
+    font-family: arial,sans-serif;
+}
+.p-lr-0 {padding-left: 0;padding-right: 0;}
+.p-t-15 {padding-top: 15px;}
+.p-b-30 {padding-bottom: 30px;}
+.p-tb-15 {padding-top: 15px;padding-bottom: 15px;}
+.font-normal {font-weight: normal}
+.f-13 {font-size: 13px;}
+.text-center {text-align: center !important;}
+.ltim_container {
+    background: #ffffff;
+    margin:15px auto;
+    box-shadow: 0 0 3px 1px #999999;
+    font-size: 14px;
+}
+.ltrim_heading {margin-bottom: 30px;text-align: center;padding: 7px 0;font-weight: 600;font-size: 15px;color:#fff;
+                    font-family:'pt_sansregular', sans-serif;background: #a6a6a6;
+                    background: -moz-linear-gradient(left, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+                    background: -webkit-linear-gradient(left, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+                    background: -o-linear-gradient(left, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+                    background: -ms-linear-gradient(left, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+                    background: linear-gradient(to right, #a6a6a6 0%, #212121 50%, #a6a6a6 100%);
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6a6a6', endColorstr='#a6a6a6', GradientType=1 );}
+.logo {height: 90px;}
+.heading {font-weight: bold; text-align: center; padding-top: 60px;font-size: 16px;}
+.head_table {width: 100%;margin-top:10px;}
+.head_table th {width:21%; border-bottom: none;}
+.border-black {border:1px solid #000;}
+.fullwidth {width:100%;}
+.main_table, .main_table th, .main_table td {border:1px solid #000;border-collapse: collapse;}
+.main_table th {text-align: center; vertical-align: top;}
+.main_table td {text-align: center;}
+.main_table > tbody > tr > td:nth-child(2) {text-align:left;padding-left: 5px;}
+
+.pic_table th{border-bottom: none;}
+/*        START OF FDTL MODAL PLACEHOLDER STYLES*/
+    .ltrim_sec .popupHeader {
+        font-size: 14px;
+    }
+    .ltrim_sec div.dynamiclabel
+    { 
+        display: block;
+        position: relative;
+        text-align: left;
+    }
+
+    .ltrim_sec div.dynamiclabel label{
+        position: absolute;
+        color:#000;
+        font-size:11px;
+        font-weight:normal;
+        background: transparent;
+        /*            border: 1px solid #333;*/
+        border-radius: 2px;
+        -webkit-border-radius:2px;
+        -moz-border-radius:2px;
+        -khtml-border-radius:2px;
+        -webkit-backface-visibility: hidden;
+        top: 10px;           
+        -moz-transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -webkit-transition: all 0.6s ease-in-out; 
+        -o-transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        opacity: 0;
+        z-index: -1;
+        line-height: 0px;
+        white-space: nowrap;
+    }
+    .ltrim_sec div.dynamiclabel > *:focus{
+        border-color:#f1292b;
+    }
+    .ltrim_sec div.dynamiclabel > *:not(:placeholder-shown) + label{
+       opacity: 1;
+        z-index:1;
+        top: -10px;
+        left:5px;
+        text-transform: uppercase;
+   }
+    .ltrim_sec div.dynamiclabel > *:focus + label{
+        opacity: 1;
+        z-index:100;
+        top: -10px;
+        left:5px;
+        text-transform: uppercase;
+    }
+    .ltrim_sec div.dynamiclabel [placeholder]::-webkit-input-placeholder {
+        transition: opacity 0.4s 0.4s ease; 
+        text-align: left;
+    }
+    .ltrim_sec div.dynamiclabel [placeholder]:focus::-webkit-input-placeholder {
+        transition: opacity 0.4s 0.4s ease; 
+        opacity: 0;
+    }
+    .ltrim_sec div.dynamiclabel .form-control {
+        text-align: left;
+        font-weight: bold;
+        color: #333;
+    }
+    .ltrim_sec div.dynamiclabel .form-control:focus {
+        border-bottom: 1px solid #ff0000;
+    }
+    /*        END OF FDTL MODAL PLACEHOLDER STYLES*/
+    .ltrim_sec .form-control {margin-bottom: 25px;}
+    .ui-datepicker-trigger {
+        height: 24px;
+        top:5px;
+        right:5px;
+    }
+    .download_img {position: relative;}
+    .download_text {position: absolute;top:5px;right:-10px;display: none;background: #333;border-radius: 4px;color: #fff;font-size: 10px;text-transform: uppercase;padding: 3px;}
+    .download_img:hover .download_text {display: block;}
+    
+@media (min-width:1200px) {
+    .ltim_container {
+        width: 930px;
+    }
+}

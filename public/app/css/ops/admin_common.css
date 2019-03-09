@@ -1,0 +1,115 @@
+ @media (min-width:1200px) {
+     .container {
+         width: 1000px;
+     }
+ }
+ 
+ .p-0 {
+     padding: 0;
+ }
+ 
+ .p-l-0 {
+     padding-left: 0;
+ }
+ 
+ .p-r-0 {
+     padding-right: 0;
+ }
+ 
+ .p-lr-0 {
+     padding-left: 0;
+     padding-right: 0;
+ }
+ 
+ .cust-container-v {
+     margin-top: 20px;
+     margin-bottom: 20px;
+     padding-bottom: 15px;
+     box-shadow: 0 0 1px 1px #ccc;
+     background: #fff;
+ }
+ 
+ .newbtnv1 {
+     transition: all 0.25s ease;
+     overflow: hidden;
+     position: relative;
+     display: inline-block;
+     margin-bottom: 0;
+     color: #fff;
+     font-size: 14px;
+     line-height: 20px;
+     font-weight: 300;
+     text-transform: uppercase;
+     text-align: center;
+     vertical-align: middle;
+     cursor: pointer;
+     border: none;
+     background: #F26232;
+     background: linear-gradient(to top, #fa9b5b, #F26232);
+     background: #f1292b;     
+     background: -webkit-gradient(linear, left top, left bottom, from(#f37858), to(#f1292b));
+     background: -moz-linear-gradient(top, #f37858, #f1292b);
+     z-index: 3;
+     border-radius: 4px;
+     height: 34px;
+ }
+ 
+ .newbtnv1:hover:before {
+     visibility: visible;
+     width: 200%;
+     left: -46%;
+ }
+ 
+ .newbtnv1:before {
+     -webkit-transition: all 0.35s ease;
+     -moz-transition: all 0.35s ease;
+     -o-transition: all 0.35s ease;
+     transition: all 0.35s ease;
+     -webkit-transform: skew(45deg, 0);
+     -moz-transform: skew(45deg, 0);
+     -ms-transform: skewX(45deg) skewY(0);
+     -o-transform: skew(45deg, 0);
+     transform: skew(45deg, 0);
+     -webkit-backface-visibility: hidden;
+     content: '';
+     position: absolute;
+     visibility: hidden;
+     top: 0;
+     left: 50%;
+     width: 0;
+     height: 100%;
+     background: #333;
+     z-index: -1;
+     color: #fff;
+ }
+ 
+ .newbtnv1:hover {
+     color: #ffffff;
+ }
+ 
+ .btn.disabled {
+     opacity: 1
+ }
+ 
+ .has-error .form-control {
+     border-color: #f1292b;
+ }
+ 
+ .has-error .form-control:focus {
+     border-color: red;
+     box-shadow: none;
+ }
+input[type='password']:focus{
+    border-color: #f1292b;
+    box-shadow: none;
+}
+.animated {
+    animation-duration: 2s;
+}
+.animated.custdelay {
+    animation-iteration-count: 3;
+    -webkit-animation-iteration-count: 3;
+}
+    .pointer{
+        cursor: pointer;
+    }

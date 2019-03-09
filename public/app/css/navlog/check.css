@@ -1,0 +1,104 @@
+.dropdown dd ul li a, .dropdowns dd ul li a, .speed dd ul li a, .level dd ul li a, .modhrs dd ul li a, .modmin dd ul li a, .endhrs dd ul li a, .endmin dd ul li a, .nationality dd ul li a, .flrules dd ul li a, .fltypes dd ul li a, .wtcat dd ul li a, .transmode dd ul li a, .tt-hrs dd ul li a, .tt-mins dd ul li a, .crfacility dd ul li a {
+    padding: 0px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+}
+.dropdown a, .dropdown a:visited, .dropdowns a, .dropdowns a:visited, .speed a, .speed a:visited, .level a, .level a:visited, .endhrs a, .endhrs a:visited, .endmin a, .endmin a:visited, .nationality a, .nationality a:visited, .flrules a, .flrules a:visited, .fltypes a, .fltypes a:visited, .wtcat a, .wtcat a:visited, .transmode a, .transmode a:visited, .tt-hrs a, .tt-hrs a:visited, .tt-mins a, .tt-mins a:visited, .crfacility a, .crfacility a:visited {
+    /* color: #999c9c; */
+    text-decoration: none;
+    outline: none;
+    color: #222222;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1000px;
+    }
+}
+
+.m-t-10 {
+    margin-top: 10px !important;
+}
+
+.m-tb-20 {
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+.m-l-m15 {
+    margin-left:-15px;
+}
+.p-l-0 {
+    padding-left: 0px;
+}
+.p-r-0 {
+    padding-right: 0px;
+}
+.p-lr-0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+.p-l-5 {
+    padding-left: 5px;
+}
+.p-r-5 {
+    padding-right:5px;
+}
+.p-lr-5 {
+    padding-left: 5px;
+    padding-right:5px;
+}
+.f-13 {
+    font-size: 13px;
+}
+
+.nlg_form .form-control {
+    text-align: center;
+}
+
+.nlg_date_box {
+    position: relative;
+    /*padding-right: 5px;*/
+    cursor: pointer;
+}
+.from_date_icon {
+    position: absolute;
+    top:0px;
+    right:17px;
+    z-index:1;
+    
+}
+
+.nlg_form .radio-inline input[type=radio] {
+    margin-left: -16px;
+}
+.nlg_form .checkbox-inline, .radio-inline {
+    padding-left:14px; 
+}
+.radio_sec_minmax {
+    /*margin-left: -15px;*/
+    margin-top: 4px;
+    padding-left: 2px;
+    padding-right: 0;
+    /*font-size: 13px*/
+}
+
+.nlg_process_btn {
+    display: inline-block;
+    width: 157px;
+    height: 33px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 0;
+    margin-bottom: 0px;
+    text-align: center;
+    position: relative;
+    font-weight: 700;
+    padding: 0;
+    font-family: 'pt_sansregular',sans-serif;
+    font-weight: normal;
+    background: #777;
+}

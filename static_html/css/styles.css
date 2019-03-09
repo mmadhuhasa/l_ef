@@ -1,0 +1,295 @@
+
+body{
+    background: #ededed;
+    font-size: 12px;
+    font-family: arial;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.container {
+    max-width: 960px;
+}
+.navbar-top {
+    padding: 0 20px !important;
+}
+.ml-auto, .mx-auto {
+    margin-left: 0 !important;
+}
+.navbar-top{
+    background: rgb(238,53,52); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(238,53,52,1) 0%, rgba(240,110,84,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(238,53,52,1) 0%,rgba(240,110,84,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(238,53,52,1) 0%,rgba(240,110,84,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee3534', endColorstr='#f06e54',GradientType=0 ); /* IE6-9 */
+}
+.boxContainer{
+    -webkit-box-shadow: 0 3px 3px 0 rgba(000,000,000,.3);
+    box-shadow: 0 3px 3px 0 rgba(000,000,000,.3);
+    margin-top:20px;
+}
+.topBrder{
+    height: 25px;
+    border-radius: 2px 2px 0 0;
+    background: rgb(161,161,161); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(161,161,161,1) 0%, rgba(50,50,50,1) 44%, rgba(50,50,50,1) 58%, rgba(161,161,161,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(161,161,161,1) 0%,rgba(50,50,50,1) 44%,rgba(50,50,50,1) 58%,rgba(161,161,161,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(161,161,161,1) 0%,rgba(50,50,50,1) 44%,rgba(50,50,50,1) 58%,rgba(161,161,161,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1a1a1', endColorstr='#a1a1a1',GradientType=1 ); /* IE6-9 */
+}
+/* Search Block style starts */
+.searchBlock{
+    background: #fff;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(000,000,000,.4);
+    box-shadow: 0 2px 2px 0 rgba(000,000,000,.4);
+    padding: 12px;
+}
+.searchBox{
+    float: left;
+    margin-right: 30px;
+    width: 44%;
+    position: relative;
+}
+.searchBtn{
+    width: 36px;
+    display: inline-block;
+    height: 34px;
+    vertical-align: top;
+    border-radius: 0 5px 5px 0;
+    border: 0;
+    margin-left: -5px;
+    color:#fff;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgb(240,119,89); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(240,119,89,1) 1%, rgba(238,51,52,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(240,119,89,1) 1%,rgba(238,51,52,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(240,119,89,1) 1%,rgba(238,51,52,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f07759', endColorstr='#ee3334',GradientType=0 ); /* IE6-9 */
+}
+.searchBox input{
+    border:1px solid #989898;
+    border-radius:5px;
+    display: inline-block;
+    line-height: 32px;
+    width: 100%;
+    padding:0 40px 0 5px;
+}
+
+.searchBox input::placeholder {
+    font-size: 11px;
+  }
+.favAirports{
+    border:1px solid #989898;
+    background: #ededed;
+    border-radius: 5px;
+    float: left;
+    width: 40%;
+    min-height: 34px;
+}
+.favAirports ul {
+    padding-top: 7px !important;
+    margin-left: 55px;
+    margin-bottom: 0;
+}
+.favAirports li {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 0 6px;
+}
+.favAirports > span {
+    font-size: 9px;
+    text-transform: uppercase;
+    font-style: italic;
+    width: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: #716f6f;
+    float:left;
+    padding: 2px 0 0 3px;
+}
+.icons{
+    background: url("../images/icons.png") no-repeat 500px 500px;
+}
+.downloadLinks{
+    float: right;
+}
+.downloadPdf, .opnCalander{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin: 0 0 0 15px;
+}
+.downloadPdf{
+    background-position: 3px -6px;
+}
+.opnCalander{
+    background-position:-65px -5px;
+}
+@media screen and (min-width:768px) and (max-width:989px){
+    .searchBox {
+        width: 34%;
+    }
+    .favAirports {
+        width: 44%;
+    }
+}
+@media screen and (max-width:767px){
+    .searchBox {
+        float: none;
+        width: auto;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .favAirports {
+        float: none;
+        width: auto;
+        margin-bottom: 20px;
+    }
+}
+/* Search Block style ends */
+
+/* Watch hours list starts here */
+.hoursListContainer{
+    padding: 15px 10px;
+}
+.whList{
+    background: #fff;
+    -webkit-box-shadow: 0 0 1px 1px rgba(000,000,000,.2);
+    box-shadow:  0 0 1px 1px rgba(000,000,000,.2);
+    padding: 7px;
+    position: relative;
+    margin-bottom: 15px;
+}
+.scrollingList{
+    position: relative;
+    margin-right: 80px;
+}
+.slick-arrow{
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: 0;
+    overflow: hidden;
+}
+.slick-prev{
+    right:45px;
+}
+.slick-prev:after,.slick-next:after{
+    content:"";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../images/icons.png) no-repeat -12px -66px;
+    border: 0;
+    cursor: pointer;
+    position:absolute;
+    left: 0;
+    top: 0;
+}
+.slick-prev:after{
+    background-position: -12px -66px;
+}
+.slick-next:after{
+    background-position:  -57px -66px;
+}
+.slick-disabled.slick-prev:after{
+    background-position: -104px -66px;
+    cursor: no-drop;
+}
+.slick-disabled.slick-next:after{
+    background-position: -149px -66px;
+    cursor: no-drop;
+}
+.editIconsCont {
+    position: absolute;
+    right: -77px;
+    top: 40px;
+}
+.editIcon,.checkListIcon{
+    width:26px;
+    height: 26px;
+    display: inline-block;
+    z-index: 1;
+}
+.editIcon {
+    background-position: -17px -112px;
+    margin-right: 5px;
+}
+.checkListIcon{
+    background-position: -57px -114px;
+}
+.whList ul,.whList dl,.whList dd{
+    margin-bottom:0
+}
+.whList li{
+    list-style:none;
+}
+.whList dl{
+    position:relative;
+    padding-left:100px;
+}
+.whList dt{
+    position:absolute;
+    width:100px;
+    left:0;
+}
+.whList dd{
+    display:inline-block;
+    padding-right: 15px;
+}
+.hrsClosed{
+    color:red;
+}
+.flightDets{
+    font-size: 10px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.flightDets p{
+    margin-bottom: 0;
+}
+.viewFlight {
+    display: inline-block;
+    width: 25px;
+    height: 15px;
+    background-position: -102px -119px;
+    vertical-align: sub;
+}
+.flightName {
+    font-size: 12px;
+    color: #f00;
+    font-weight: bold;
+}
+.flightDt {
+    font-style: italic;
+}
+.whList{
+    max-height: 180px;
+    overflow: hidden;
+}
+@media screen and (max-width:460px){
+    .scrollingList {
+        margin-right: 0;
+    }
+    .whList ul{
+        margin-top: 30px;
+    }
+    .editIconsCont {
+        right: 3px;
+        top: 37px;
+    }
+    .flightDets {
+        padding-right: 70px;
+    }
+}
+/* Watch hours list ends here */

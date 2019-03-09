@@ -1,0 +1,96 @@
+.ui-datepicker { font-size:9.18pt !important}
+.ui-datepicker-calendar a.ui-state-default { background: lightgray;border-color:lightgray;text-align: center;  }
+.ui-datepicker-calendar td.ui-datepicker-today a { border-color: lightgray; background: lightgray;text-align: center;  } 
+.ui-datepicker-calendar a.ui-state-hover { background: darkgray; border-color:darkgray;text-align: center;} 
+.ui-datepicker-calendar a.ui-state-active { background: #F1292b;border-color: #F1292b;color: beige;text-align: center; } 
+.ui-datepicker-today.ui-datepicker-current-day a.ui-state-highlight {border-color: #F1292b;background: #F1292b;text-align: center;}
+.font-bold {
+    font-weight: bold;
+}
+.pointer {
+    cursor: pointer}
+::-webkit-input-placeholder { /* WebKit browsers */
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 13px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 13px;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 13px;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 13px;
+}
+.supplementary-height{
+    height: 183px;
+}
+.ui-datepicker-trigger {
+    right:0;
+    position: absolute;
+    z-index: 999;
+    cursor: pointer;
+}
+.has-error .form-control, .has-error .form-control:focus {border-color:#f1292b; box-shadow:none;-webkit-box-shadow:none;}
+.popover-content {
+    font-family: 'pt_sansregular';
+}
+.popover {
+    width: 250px;
+    background-color: #F6F6F6;
+    border: #F1292b solid 1px;
+    font-family: 'pt_sansregular';   
+    margin-top: 0px;
+    text-align: center;
+}
+/*.popover .watch_hour_popover {
+   width: 220px;
+   background-color: #eee;
+   border: #F1292b solid 1px;    
+}*/
+.calendar_width{
+    text-align:left; padding-left:15px;
+    width:80px;
+}
+/*
+.popover{
+   border:1px solid #000000;   
+}
+.popover.top > .arrow {width: 0; 
+        height: 0; 
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top:5px solid #F1292b;
+        }*/
+.datepicker-icon{
+    right:66px;
+}
+.dept_time_hours_text{
+    font-weight: bold;color: #555;font-size: 15px;
+}
+.disabled_color{
+    background: #eee
+}
+.form-control{
+    font-size: 13px
+}
+.hidden{
+    display: none;
+}
+.has-error .input-group-addon {
+    color: red;
+    background-color: #f2dede;
+    border-color: red;
+}
+.text-red{color: red;}
+.company_color{color: #f1292b}
+.atc_after_process {border-right:1px dotted #f1292b;}
+.notam-section_process {border-left:1px dotted #f1292b;height:342px;}
+.model_font{font-size: 13px;font-weight: bold}

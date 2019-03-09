@@ -1,0 +1,28 @@
+.sec-container{
+	width:830px;
+	background: #fff;
+	font-family: arial,sans-serif;
+	margin-top: 15px;
+	margin-bottom: 15px;
+
+}
+.sec_gkb{
+	border-top:0px;
+}
+.sec_gkb>thead>tr>th{
+	border:1px solid #000;
+	font-weight: bold;
+	padding:0px;
+	text-align: right;
+	font-size: 12px;
+	padding-right: 10px;
+}
+.sec_gkb>tbody>tr>td{
+	border:1px solid #000;
+	text-align: right;
+	font-size: 11px;
+	
+}
+.sec_gkb>tbody>tr>td{
+	border:1px solid #000;
+}
